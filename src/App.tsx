@@ -4,6 +4,8 @@ import Main from "./Components/Main";
 import Lenguajes from "./Components/Lenguajes";
 import SobreMi from "./Components/SobreMi";
 import Estudios from "./Components/Estudios";
+import Proyecto from "./Components/Proyectos";
+
 console.log(`
     
                                              |  \\       /      \\  /      \\  _/  \\  
@@ -27,7 +29,10 @@ function App() {
       <SobreMi></SobreMi>
       <Lenguajes></Lenguajes>
       <Estudios></Estudios>
-      <Lenguajes></Lenguajes>
+      <div className="mainProyectos">
+        {" "}
+        <Proyecto imgFondo=""></Proyecto>
+      </div>
     </body>
   );
 }
