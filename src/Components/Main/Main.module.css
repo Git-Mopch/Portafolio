@@ -1,0 +1,23 @@
+.tituloMain {
+  text-align: center;
+  font-size: 200px;
+  font-family: "Nunito", serif;
+  margin-top: 50px;
+}
+
+.subtituloMain {
+  text-align: center;
+  font-size: 90px;
+  font-family: "Nunito", serif;
+  margin-top: 30px;
+}
+
+.elementoFlecha {
+  margin-top: 40px;
+  transition: margin-top 0.2s;
+  color: #7a1cac;
+}
+
+.elementoFlecha:hover {
+  margin-top: 60px;
+}

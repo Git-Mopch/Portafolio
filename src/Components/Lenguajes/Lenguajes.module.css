@@ -1,0 +1,25 @@
+.sliderContainer {
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.logoSlider > span {
+  width: 100px;
+  height: 100px;
+  color: #2e073f;
+}
+
+.logoSlider {
+  display: flex;
+  animation: slideshow 12s infinite linear;
+  will-change: transform; /* Indica al navegador que la propiedad transform cambiará */
+}
+
+@keyframes slideshow {
+  from {
+    transform: translate(1900px);
+  }
+  to {
+    transform: translate(-1300px);
+  }
+}
