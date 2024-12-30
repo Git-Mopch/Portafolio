@@ -25,7 +25,11 @@ function Estudios({}: Props) {
             <p>
               <strong>UCAM</strong>, Murcia
             </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>
+              Gracias a este grado he podido dominar lenguajes tan utiles para
+              el dia a dia como desarrollador web entre ellos: Html, Css,
+              JavaScript, NodeJs, Sql, PhpMyAdmin, Wordpress.
+            </p>
           </div>
         </div>
         <div className={`${styles.timelineItem} ${styles.right}`}>
@@ -35,7 +39,13 @@ function Estudios({}: Props) {
             <p>
               <strong>UCAM</strong>, Murcia
             </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>
+              En Dam aprendí los fundamentos claves sobre el desarrollo de
+              aplicaciones multiplataforma, adquirimos el conocimiento necesario
+              para desarrollar aplucaciones funcionales para dispositivos del
+              ecosistema de Apple y de Android. En este curso dominé lenguajes
+              como Kotlin, Python, Swift, PostgreSql, Xml.
+            </p>
           </div>
         </div>
         <a href="" style={{ textDecoration: "none" }}>
@@ -46,7 +56,16 @@ function Estudios({}: Props) {
               <p>
                 <strong>UDEMY</strong>
               </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>
+                Este curso de la Dr.Angela Yu, me ayudó a profundizar en el
+                desarrollo web, adquiriendo herramientas y bases utiles para
+                mejorar en el desarrollo. Ademas de herramientas, tambien
+                aprendí nuevas formas de estrutructurar un proyecto, y a
+                añadirles nuevos enfoques innovadores de diseño, En este curso
+                tan completo comprendí en exactitud los lenguajes y las
+                herramientas más utilizadas como: JavaScript, TypeScript,
+                Node.Js,Bootstrap,React, FlexBox,Git.
+              </p>
             </div>
           </div>
         </a>
@@ -60,7 +79,14 @@ function Estudios({}: Props) {
               <p>
                 <strong>UDEMY</strong>
               </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>
+                En este curso de Udemy creado por Jonathan Goyes, he aprendido a
+                desarrollar una aplicación movil en profundidad mediante el uso
+                de Tokens, Apis, y estilos modernos de UI, ademas he tenido el
+                privilegio de profundizar en Kotlin ya que me parece un lenguaje
+                muy interesante y sobre todo util para el desarrollo de software
+                en Android.
+              </p>
             </div>
           </div>
         </a>
