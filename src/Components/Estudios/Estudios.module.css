@@ -1,23 +1,70 @@
-.tablaEstudios {
-  width: 1200px !important;
-  margin: 0 auto;
-  border-radius: 20px;
-  border: 2px solid #7a1cac; /* Add border to the table */
-  border-collapse: collapse; /* Ensures that the border is shared between cells */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 50px auto;
 }
 
-.tablaEstudios th {
-  font-family: "Poppins", serif;
-  border: 1px solid #7a1cac; /* Add border to header cells */
+.timelineItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  position: relative;
 }
 
-.tablaEstudios td {
-  font-family: "Nunito", serif;
-  border: 1px solid #7a1cac; /* Add border to data cells */
+.timelineItem.left {
+  flex-direction: row-reverse;
 }
 
-.tablaEstudios td a {
-  color: #7a1cac;
+.timelineYear {
+  background-color: #7a1cac;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin: 0 20px;
+  flex-shrink: 0;
+}
+
+.timelineContent {
+  background-color: #2e073f;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  flex-grow: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 60%;
+}
+
+.timelineContent h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #ad49e1;
+}
+
+.timelineContent p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #7a1cac;
+  transform: translateX(-50%);
+}
+
+.timelineItem.left .timelineContent {
+  text-align: right;
 }
 
 .tituloEstudios {
@@ -26,9 +73,4 @@
   text-align: center;
   margin-top: 100px;
   color: #7a1cac;
-}
-
-.btnCv {
-  background-color: #7a1cac !important;
-  border: 2px solid #2e073f !important;
 }

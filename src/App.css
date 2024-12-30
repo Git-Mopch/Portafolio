@@ -1,7 +1,21 @@
 body {
   background-color: black;
 }
+
+.tituloProyectos {
+  font-family: "Poppins", serif;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 100px;
+  color: #7a1cac;
+}
+
 .mainProyectos {
-  width: auto;
-  height: auto;
+  display: flex;
+  flex-wrap: wrap; /* Para permitir que los cards se ajusten en varias filas si es necesario */
+  justify-content: center; /* Alinea horizontalmente al centro */
+  align-items: center; /* Alinea verticalmente al centro */
+  gap: 20px; /* Espaciado entre los elementos */
+  margin: 50px auto; /* Centrado horizontal del contenedor */
+  width: 90%; /* Ajusta el ancho del contenedor */
 }

@@ -1,0 +1,43 @@
+/* Proyectos.module.css */
+.imagenCard {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.cardSetting {
+  width: 400px;
+  padding: 10px;
+  height: auto;
+  transition: width 0.6s;
+}
+.cardSetting:hover {
+  width: 410px;
+}
+
+.iconosLenguajes {
+  position: relative;
+  left: 220px;
+  bottom: 40px;
+  background-color: #7a1cac;
+  width: 120px;
+  padding: 5px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.iconosLenguajes > * {
+  margin: 5px;
+  color: white;
+}
+
+.textoProyecto {
+  position: relative;
+  bottom: 30px;
+}
+.btn {
+  padding: 200px;
+}
