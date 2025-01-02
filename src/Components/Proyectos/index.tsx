@@ -1,5 +1,6 @@
 import React from "react";
 import stylesC from "./Proyectos.module.css";
+import { Link } from "react-router-dom";
 
 type Props = {
   imgFondo?: string;
@@ -20,7 +21,7 @@ export default function Proyectos({
   icono3,
 }: Props) {
   return (
-    <a href={urlProyecto} target="_blank" style={{ textDecoration: "none" }}>
+    <Link to={urlProyecto || "#"} style={{ textDecoration: "none" }}>
       <div className={"card " + stylesC.cardSetting}>
         <img
           src={
@@ -42,6 +43,6 @@ export default function Proyectos({
           </p>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import Atropos from "atropos/react"; // Importar Atropos
 import "atropos/css"; // Importar estilos de Atropos
 import styles from "./SobreMi.module.css";
-import fotoUser from "../../fotoUser.png";
+import fotoUser from "../../img/fotoUser.png";
 type Props = {};
 
 function SobreMi({}: Props) {

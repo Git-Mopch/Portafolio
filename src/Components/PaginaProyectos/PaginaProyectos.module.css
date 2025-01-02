@@ -1,0 +1,19 @@
+.headerSetting {
+  width: auto;
+  margin: 50px;
+}
+.buttonSettings {
+  padding: 20px;
+  border-radius: 20px;
+}
+.spanSettings {
+  margin-left: 20px;
+  font-size: 18px;
+}
+.boxMainProyect {
+  background-color: aqua;
+  width: auto;
+  margin: 50px;
+}
+.boxInnerMain {
+}

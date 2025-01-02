@@ -48,7 +48,11 @@ function Estudios({}: Props) {
             </p>
           </div>
         </div>
-        <a href="" style={{ textDecoration: "none" }}>
+        <a
+          href="https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=24T7MT123024"
+          target="_blank"
+          style={{ textDecoration: "none" }}
+        >
           <div className={`${styles.timelineItem} ${styles.left}`}>
             <div className={styles.timelineYear}>2024</div>
             <div className={styles.timelineContent}>
@@ -69,7 +73,11 @@ function Estudios({}: Props) {
             </div>
           </div>
         </a>
-        <a href="" style={{ textDecoration: "none" }}>
+        <a
+          href="https://www.udemy.com/course/kotlin-app-delivery-con-nodejs-sql-mercado-pago-y-paypal/?couponCode=24T7MT123024"
+          target="_blank"
+          style={{ textDecoration: "none" }}
+        >
           <div className={`${styles.timelineItem} ${styles.left}`}>
             <div className={styles.timelineYear}>2024</div>
             <div className={styles.timelineContent}>
