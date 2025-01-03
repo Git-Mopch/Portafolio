@@ -5,15 +5,90 @@
 .buttonSettings {
   padding: 20px;
   border-radius: 20px;
+  backdrop-filter: blur(11px) saturate(52%);
+  -webkit-backdrop-filter: blur(11px) saturate(52%);
+  background-color: rgba(30, 9, 113, 0.61);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
 .spanSettings {
   margin-left: 20px;
   font-size: 18px;
 }
 .boxMainProyect {
-  background-color: aqua;
+  display: flex;
   width: auto;
   margin: 50px;
 }
 .boxInnerMain {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0px 50px 50px 50px;
+}
+
+.botonProyectos {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px;
+}
+.iconosSettings {
+  margin-bottom: 5px;
+  margin-right: 6px;
+}
+.hrStyleSettings {
+  border: none;
+  height: 3px;
+  border-radius: 40px;
+  width: 170px;
+  background-color: #000000;
+}
+.tituloProyecto {
+  font-size: 130px;
+}
+.LenguajesProyecto {
+  margin-top: 20px;
+  font-size: 40px;
+}
+.mainLenguajes {
+  display: flex;
+}
+.iconosLenguajesProyecto {
+  backdrop-filter: blur(11px) saturate(52%);
+  -webkit-backdrop-filter: blur(11px) saturate(52%);
+  background-color: rgba(30, 9, 113, 0.61);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  width: 200px;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 2px;
+  text-align: center;
+}
+
+.imagenProyecto {
+  width: 560px;
+  margin-left: 90px;
+  border-radius: 20px;
+  border: 2px solid rgb(211, 211, 211);
+}
+
+.mainFuncionalidad {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(231, 231, 231, 0.322);
+  border-radius: 12px;
+  border: 1px solid rgba(170, 170, 170, 0.274);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.FuncionalidadProyecto {
+  font-size: 40px;
+}
+.ListItems {
+  font-size: 17px;
+}
+.textoProyecto {
+  font-size: 19px;
 }

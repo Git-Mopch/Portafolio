@@ -45,6 +45,7 @@ function App() {
             element={
               <>
                 <Header />
+
                 <Main />
                 <SobreMi />
                 <Lenguajes />
@@ -60,9 +61,9 @@ function App() {
                   <div className="mainProyectos">
                     <Proyecto
                       urlProyecto="/livecan"
-                      tituloProyecto="Laroye-Cafe"
-                      imgFondo={imagenLaroye}
-                      textoProyecto="Laroye es una cafetería acogedora donde combinamos buen café, deliciosos postres caseros y un ambiente único. Es el lugar ideal para relajarse, trabajar o disfrutar de una buena conversación mientras degustas nuestras especialidades preparadas con ingredientes de la mejor calidad. ¡Te esperamos para compartir momentos inolvidables!"
+                      tituloProyecto="Livecan"
+                      imgFondo={imagenLivecan}
+                      textoProyecto="LiveCan ofrece mordedores innovadores y resistentes para perros, diseñados para promover su salud dental y entretenimiento. Calidad y diversión en cada mordida. 🐾"
                       icono1={<FaWordpress size={25} />}
                       icono2={<RiPhpFill size={25} />}
                       icono3={<SiPhpmyadmin size={25} />}
