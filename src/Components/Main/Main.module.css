@@ -1,23 +1,101 @@
-.tituloMain {
-  text-align: center;
-  font-size: 200px;
-  font-family: "Nunito", serif;
-  margin-top: 50px;
+.mainBox {
+  display: flex;
+  width: auto;
+  height: 860px;
 }
 
+.mainBoxes {
+  width: 100%;
+}
+
+.botonDisponible {
+  background-color: white;
+  border-radius: 20px;
+  border: 4px solid #7a1cac;
+  color: black;
+  position: relative;
+  left: 210px;
+  top: 60px;
+  font-family: "Open Sans", serif;
+  box-shadow: 0 0 10px #ad49e1, 0 0 20px #ad49e1, 0 0 30px #ad49e1,
+    0 0 40px #ad49e1;
+}
+
+.tituloMain {
+  color: azure;
+  padding: 90px 0px 0px 90px;
+  font-size: 100px;
+  font-family: "Poppins", serif;
+  margin-left: 120px;
+}
 .subtituloMain {
-  text-align: center;
-  font-size: 90px;
-  font-family: "Nunito", serif;
+  color: azure;
+  padding: 10px 0px 0px 90px;
+  font-size: 30px;
+  font-family: "Poppins", serif;
+  margin-left: 120px;
+}
+.iconoDisponible {
+  margin-bottom: 4px;
+  margin-left: 3px;
+  margin-right: 5px;
+}
+
+.espacioLenguajes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   margin-top: 30px;
 }
 
-.elementoFlecha {
-  margin-top: 40px;
-  transition: margin-top 0.2s;
-  color: #7a1cac;
+.lenguajes {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-family: "Poppins", serif;
+  backdrop-filter: blur(20px) saturate(64%);
+  -webkit-backdrop-filter: blur(20px) saturate(64%);
+  background-color: rgba(173, 73, 225, 0.48);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  color: aliceblue;
 }
 
-.elementoFlecha:hover {
-  margin-top: 60px;
+.botonesProfile {
+  margin-top: 50px;
+  font-size: 20px;
+  margin-right: 10px;
+  backdrop-filter: blur(20px) saturate(64%);
+  -webkit-backdrop-filter: blur(20px) saturate(64%);
+  background-color: rgba(0, 0, 0, 0.48);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  color: aliceblue;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.botonesProfile:hover {
+  color: #ebd3f8;
+  box-shadow: 0 0 10px #ad49e1, 0 0 20px #ad49e1, 0 0 30px #ad49e1,
+    0 0 40px #ad49e1;
+}
+
+.iconosButton {
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+
+.iconDevelop {
+  color: #ffffff;
+  margin: 50px;
+  margin-left: 160px;
+  text-shadow: 0 0 10px #ad49e1, 0 0 20px #ad49e1, 0 0 30px #ad49e1;
+  filter: drop-shadow(0 0 10px #ad49e1) drop-shadow(0 0 20px #ad49e1);
 }

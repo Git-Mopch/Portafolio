@@ -44,11 +44,13 @@
 .tituloProyecto {
   font-size: 130px;
   color: white;
+  font-family: "Poppins", serif;
 }
 .LenguajesProyecto {
   margin-top: 20px;
   font-size: 40px;
   color: white;
+  font-family: "Poppins", serif;
 }
 .mainLenguajes {
   display: flex;
@@ -87,13 +89,15 @@
 .FuncionalidadProyecto {
   font-size: 40px;
   color: white;
-  font-family: "Arvo", serif;
+  font-family: "Poppins", serif;
 }
 .ListItems {
   font-size: 17px;
   color: white;
+  font-family: "Open Sans", serif;
 }
 .textoProyecto {
   font-size: 19px;
   color: aliceblue;
+  font-family: "Open Sans", serif;
 }

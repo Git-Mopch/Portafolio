@@ -49,8 +49,6 @@ function App() {
 
                 <Main />
                 <SobreMi />
-                <Lenguajes />
-                <Estudios />
                 <div id="Proyectos">
                   <h3 className="tituloProyectos">
                     <strong>Proyectos</strong>
