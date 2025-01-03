@@ -19,6 +19,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { BiLogoTypescript } from "react-icons/bi";
 
 import Livecan from "./PaginasProyectos/livecan";
+import Laroye from "./PaginasProyectos/laroye";
 
 console.log(`
     
@@ -64,9 +65,12 @@ function App() {
                       tituloProyecto="Livecan"
                       imgFondo={imagenLivecan}
                       textoProyecto="LiveCan ofrece mordedores innovadores y resistentes para perros, diseñados para promover su salud dental y entretenimiento. Calidad y diversión en cada mordida. 🐾"
-                      icono1={<FaWordpress size={25} />}
-                      icono2={<RiPhpFill size={25} />}
-                      icono3={<SiPhpmyadmin size={25} />}
+                    />
+                    <Proyecto
+                      urlProyecto="/laroye"
+                      tituloProyecto="Laroye"
+                      imgFondo={imagenLaroye}
+                      textoProyecto="Laroye Café es un lugar acogedor y familiar donde puedes disfrutar de una experiencia gastronómica única, con productos artesanales y un ambiente joven. ☕"
                     />
                   </div>
                 </div>
@@ -74,8 +78,9 @@ function App() {
               </>
             }
           />
-          {/* Ruta para Livecan */}
+
           <Route path="/livecan" element={<Livecan />} />
+          <Route path="/laroye" element={<Laroye />} />
         </Routes>
       </body>
     </Router>
