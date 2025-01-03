@@ -3,17 +3,16 @@
   margin: 50px;
 }
 .buttonSettings {
-  padding: 20px;
-  border-radius: 20px;
-  backdrop-filter: blur(11px) saturate(52%);
-  -webkit-backdrop-filter: blur(11px) saturate(52%);
-  background-color: rgba(30, 9, 113, 0.61);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(145, 30, 199, 0.5);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 .spanSettings {
   margin-left: 20px;
   font-size: 18px;
+  color: white;
 }
 .boxMainProyect {
   display: flex;
@@ -40,22 +39,24 @@
   height: 3px;
   border-radius: 40px;
   width: 170px;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 .tituloProyecto {
   font-size: 130px;
+  color: white;
 }
 .LenguajesProyecto {
   margin-top: 20px;
   font-size: 40px;
+  color: white;
 }
 .mainLenguajes {
   display: flex;
 }
 .iconosLenguajesProyecto {
-  backdrop-filter: blur(11px) saturate(52%);
-  -webkit-backdrop-filter: blur(11px) saturate(52%);
-  background-color: rgba(30, 9, 113, 0.61);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(145, 30, 199, 0.5);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
   width: 200px;
@@ -75,9 +76,9 @@
 .mainFuncionalidad {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(231, 231, 231, 0.322);
+  background-color: rgba(145, 30, 199, 0.5);
   border-radius: 12px;
-  border: 1px solid rgba(170, 170, 170, 0.274);
+  border: 1px solid rgba(255, 255, 255, 0.125);
   padding: 20px;
   margin-top: 20px;
   border-radius: 10px;
@@ -85,10 +86,14 @@
 
 .FuncionalidadProyecto {
   font-size: 40px;
+  color: white;
+  font-family: "Arvo", serif;
 }
 .ListItems {
   font-size: 17px;
+  color: white;
 }
 .textoProyecto {
   font-size: 19px;
+  color: aliceblue;
 }

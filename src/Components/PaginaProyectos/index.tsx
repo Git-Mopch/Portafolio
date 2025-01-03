@@ -91,9 +91,10 @@ const PaginaProyectos = (props: Props) => {
         </div>
         <div className={styles.boxInnerMain}>
           <div>
-            <a href={props.imgProyect} target="_blank">
+            <a href={props.imgProyect} target="_blank" draggable="false">
               <img
                 className={styles.imagenProyecto}
+                draggable="false"
                 src={
                   props.imgProyect ||
                   "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
