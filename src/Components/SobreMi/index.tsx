@@ -1,17 +1,18 @@
 import React from "react";
-import Atropos from "atropos/react"; // Importar Atropos
-import "atropos/css"; // Importar estilos de Atropos
 import styles from "./SobreMi.module.css";
-import fotoUser from "../../img/fotoUser.png";
 import { PiReadCvLogoFill } from "react-icons/pi";
 import imgUser from "../../img/fotoUser.png";
 import PersonalInfo from "../PersonalInfo";
+import { IoTimerSharp } from "react-icons/io5";
+
+import { FaLaptopCode } from "react-icons/fa6";
+import { IoGitNetwork } from "react-icons/io5";
 
 type Props = {};
 
 function SobreMi({}: Props) {
   return (
-    <div className={styles.mainSobreMi}>
+    <div className={styles.mainSobreMi} id="sobreMi">
       <h2 className={styles.tituloSobreMi}>
         {" "}
         <strong>Sobre Mí</strong>
@@ -50,7 +51,25 @@ function SobreMi({}: Props) {
         <div className={styles.infoSons}>
           <img src={imgUser} alt="" className={styles.imageContainer} />
           <div className={styles.EspacioInfoPersonal}>
-            <PersonalInfo tituloCard="Hola" />
+            <PersonalInfo
+              tituloCard="PROYECTOS"
+              enlaceSeccion=""
+              icono={IoGitNetwork}
+              num="2"
+            />
+            <PersonalInfo
+              tituloCard="EXPERIENCIA"
+              enlaceSeccion="#Experiencia"
+              icono={IoTimerSharp}
+              num="4"
+              txt="AÑOS"
+            />
+            <PersonalInfo
+              tituloCard="LENGUAJES"
+              enlaceSeccion=""
+              icono={FaLaptopCode}
+              num="+11"
+            />
           </div>
         </div>
       </div>

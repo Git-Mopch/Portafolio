@@ -7,7 +7,7 @@ function Header({}: Props) {
   const [activeLink, setActiveLink] = useState("#home");
 
   return (
-    <header className={styles.header}>
+    <header className={styles.header} id="home">
       <nav className={styles.headerNav}>
         <ul className={styles.headerMenu}>
           <li>

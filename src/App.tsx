@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./Components/Header";
 import Main from "./Components/Main";
-import Lenguajes from "./Components/Lenguajes";
+import Portafolios from "./Components/Portafolio";
 import SobreMi from "./Components/SobreMi";
 import Estudios from "./Components/Estudios";
 import Proyecto from "./Components/Proyectos";
@@ -49,29 +49,8 @@ function App() {
 
                 <Main />
                 <SobreMi />
-                <div id="Proyectos">
-                  <h3 className="tituloProyectos">
-                    <strong>Proyectos</strong>
-                  </h3>
-                  <center>
-                    {" "}
-                    <hr style={{ color: "#7a1cac", width: 150 }} />
-                  </center>
-                  <div className="mainProyectos">
-                    <Proyecto
-                      urlProyecto="/livecan"
-                      tituloProyecto="Livecan"
-                      imgFondo={imagenLivecan}
-                      textoProyecto="LiveCan ofrece mordedores innovadores y resistentes para perros, diseñados para promover su salud dental y entretenimiento. Calidad y diversión en cada mordida. 🐾"
-                    />
-                    <Proyecto
-                      urlProyecto="/laroye"
-                      tituloProyecto="Laroye"
-                      imgFondo={imagenLaroye}
-                      textoProyecto="Laroye Café es un lugar acogedor y familiar donde puedes disfrutar de una experiencia gastronómica única, con productos artesanales y un ambiente joven. ☕"
-                    />
-                  </div>
-                </div>
+                <Estudios />
+                <Portafolios />
                 <Formulario />
               </>
             }

@@ -11,7 +11,19 @@
   margin-bottom: 30px;
   position: relative;
 }
+.tituloSobreMi {
+  text-align: center;
+  font-size: 70px;
+  font-family: "Poppins", serif;
+  color: #ad49e1;
+}
 
+.subtituloSobreMi {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Poppins", serif;
+  color: #ebd3f8;
+}
 .timelineItem.left {
   flex-direction: row-reverse;
 }
@@ -65,7 +77,7 @@
 }
 
 .timelineItem.left .timelineContent {
-  text-align: right;
+  text-align: left;
 }
 
 .tituloEstudios {
