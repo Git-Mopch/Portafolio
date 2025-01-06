@@ -1,4 +1,3 @@
-/* Proyectos.module.css */
 .imagenCard {
   width: 100%;
   height: auto;
@@ -10,8 +9,8 @@
 
 .cardSetting {
   width: 400px;
-  padding: 10px;
   height: auto;
+  margin: 0;
 }
 
 .iconosLenguajes {

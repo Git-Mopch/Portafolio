@@ -1,6 +1,7 @@
 import React from "react";
 import stylesC from "./Proyectos.module.css";
 import { GoArrowUpRight } from "react-icons/go";
+import { useNavigate } from "react-router-dom";
 
 type Props = {
   imgFondo?: string;
@@ -11,15 +12,15 @@ type Props = {
   icono2?: React.ReactNode;
   icono3?: React.ReactNode;
 };
+
 export default function Proyectos({
   imgFondo,
   tituloProyecto,
   textoProyecto,
   urlProyecto,
-  icono1,
-  icono2,
-  icono3,
 }: Props) {
+  const navigate = useNavigate();
+
   return (
     <div className={"card " + stylesC.cardSetting}>
       <img
@@ -35,7 +36,11 @@ export default function Proyectos({
           {tituloProyecto}
         </h5>
         <p className={"card-text " + stylesC.textoProyecto}>{textoProyecto}</p>
-        <a href={urlProyecto} className={stylesC.verProyectoSettings}>
+        <a
+          onClick={() => urlProyecto && navigate(urlProyecto)}
+          className={stylesC.verProyectoSettings}
+          style={{ cursor: "pointer" }}
+        >
           Ver más <GoArrowUpRight />
         </a>
       </div>
