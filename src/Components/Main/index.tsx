@@ -30,10 +30,13 @@ function Main({}: Props) {
         </div>
 
         <center>
-          <button className={styles.botonesProfile}>
-            <MdOpenInNew className={styles.iconosButton} />
-            Ver Proyectos
-          </button>
+          <a href="#portafolio">
+            <button className={styles.botonesProfile}>
+              <MdOpenInNew className={styles.iconosButton} />
+              Ver Proyectos
+            </button>
+          </a>
+
           <button className={styles.botonesProfile}>
             <FaGithub className={styles.iconosButton} />
             Github

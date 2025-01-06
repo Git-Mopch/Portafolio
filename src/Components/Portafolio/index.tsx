@@ -9,11 +9,33 @@ import Proyecto from "../Proyectos";
 import imgLaroye from "../../img/LaroyeProyectImage.png";
 import imgLivecan from "../../img/LivecanProyectImage.png";
 
+import imgCertificadoKotlin from "../../img/Curso-Kotlin-Certificado.jpg";
+import imgCertificadoBootcampWeb from "../../img/cursoBootcamp.jpg";
+
+import { IoLogoHtml5 } from "react-icons/io5";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaJsSquare } from "react-icons/fa";
+import { IoLogoNodejs } from "react-icons/io5";
+import { SiReact } from "react-icons/si";
+import { IoLogoPython } from "react-icons/io5";
+import { FaSwift } from "react-icons/fa6";
+import { SiKotlin } from "react-icons/si";
+import { BsFiletypeXml } from "react-icons/bs";
+import { SiMysql } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiMongodb } from "react-icons/si";
+import { SiGnubash } from "react-icons/si";
+
 function Portafolio() {
   const [activeContent, setActiveContent] = useState("contenido1");
 
   return (
     <div className={styles.mainPortafolio}>
+      <h2 className={styles.tituloSobreMi} id="portafolio">
+        {" "}
+        <strong>Portafolio</strong>
+      </h2>
+
       <div className={styles.mainBtn}>
         <button
           className={`${styles.Btn} ${
@@ -21,10 +43,8 @@ function Portafolio() {
           }`}
           onClick={() => setActiveContent("contenido1")}
         >
-          <strong>
-            <FaCodeBranch color="white" />
-            <br /> Proyectos
-          </strong>
+          <FaCodeBranch color="white" />
+          <br /> Proyectos
         </button>
         <button
           className={`${styles.Btn} ${
@@ -34,7 +54,7 @@ function Portafolio() {
         >
           <BsFillFileEarmarkPdfFill color="white" />
           <br />
-          <strong>Certificados</strong>
+          Certificados
         </button>
         <button
           className={`${styles.Btn} ${
@@ -44,7 +64,7 @@ function Portafolio() {
         >
           <AiFillCode color="white" />
           <br />
-          <strong>Lenguajes</strong>
+          Lenguajes
         </button>
         <button
           className={`${styles.Btn} ${
@@ -53,13 +73,13 @@ function Portafolio() {
           onClick={() => setActiveContent("contenido4")}
         >
           <FaTools color="white" /> <br />
-          <strong>Herramientas</strong>
+          Herramientas
         </button>
       </div>
 
       <div>
         {activeContent === "contenido1" && (
-          <div className={styles.espacioProyectos}>
+          <div className={styles.espacioProyectos} id="proyectosSeccion">
             <Proyecto
               tituloProyecto="Livecan"
               urlProyecto="/livecan"
@@ -76,10 +96,79 @@ function Portafolio() {
           </div>
         )}
         {activeContent === "contenido2" && (
-          <p>Este es el contenido del Botón 2</p>
+          <div className={styles.espacioCertificados}>
+            <a
+              href={imgCertificadoKotlin}
+              target="_blank"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              {" "}
+              <img
+                draggable="false"
+                className={styles.imagenCertificados}
+                src={imgCertificadoKotlin}
+                alt="Imagen Certificado curso de Kotlin"
+              />
+              <figcaption>Curso de desarrollo con Kotlin</figcaption>
+            </a>
+            <a
+              href={imgCertificadoBootcampWeb}
+              target="_blank"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              {" "}
+              <img
+                draggable="false"
+                className={styles.imagenCertificados}
+                src={imgCertificadoBootcampWeb}
+                alt="Imagen Certificado curso de Bootcamp frontend"
+              />
+              <figcaption>Most complete 2024 FrontEnd Bootcamp</figcaption>
+            </a>
+          </div>
         )}
         {activeContent === "contenido3" && (
-          <p>Este es el contenido del Botón 3</p>
+          <div className={styles.espacioLenguajes}>
+            <div className={styles.lenguaje} title="HTML">
+              <IoLogoHtml5 size={70} color="white" />
+            </div>
+            <div className={styles.lenguaje} title="CSS">
+              <FaCss3Alt size={70} color="white" />
+            </div>
+            <div className={styles.lenguaje} title="JAVASCRIPT">
+              <FaJsSquare size={70} color="white" />
+            </div>
+            <div className={styles.lenguaje} title="NODE JS">
+              <IoLogoNodejs size={70} color="white" />
+            </div>
+            <div className={styles.lenguaje} title="REACT">
+              <SiReact size={70} color="white" />
+            </div>
+            <div className={styles.lenguaje} title="PYTHON">
+              <IoLogoPython size={70} color="white" />
+            </div>
+            <div className={styles.lenguaje} title="SWIFT">
+              <FaSwift size={70} color="white" />
+            </div>
+            <div className={styles.lenguaje} title="KOTLIN">
+              <SiKotlin size={70} color="white" />
+            </div>
+            <div className={styles.lenguaje} title="XML">
+              <BsFiletypeXml size={70} color="white" />
+            </div>
+            <div className={styles.lenguaje} title="MYSQL">
+              <SiMysql size={70} color="white" />
+            </div>
+            <div className={styles.lenguaje} title="POSTGRESQL">
+              <BiLogoPostgresql size={70} color="white" />
+            </div>
+            <div className={styles.lenguaje} title="MONGODB">
+              <SiMongodb size={70} color="white" />
+            </div>
+            <div className={styles.lenguaje} title="BASH">
+              <SiGnubash size={70} color="white" />
+            </div>
+          </div>
         )}
         {activeContent === "contenido4" && (
           <p>Este es el contenido del Botón 4</p>

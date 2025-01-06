@@ -30,9 +30,9 @@ function Header({}: Props) {
           </li>
           <li>
             <a
-              href="#services"
-              className={activeLink === "#services" ? styles.active : ""}
-              onClick={() => setActiveLink("#services")}
+              href="#portafolio"
+              className={activeLink === "#portafolio" ? styles.active : ""}
+              onClick={() => setActiveLink("#portafolio")}
             >
               Portafolio
             </a>
@@ -40,8 +40,8 @@ function Header({}: Props) {
           <li>
             <a
               href="#contact"
-              className={activeLink === "#contact" ? styles.active : ""}
-              onClick={() => setActiveLink("#contact")}
+              className={activeLink === "#contacto" ? styles.active : ""}
+              onClick={() => setActiveLink("#contacto")}
             >
               Contacto
             </a>

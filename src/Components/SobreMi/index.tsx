@@ -53,20 +53,20 @@ function SobreMi({}: Props) {
           <div className={styles.EspacioInfoPersonal}>
             <PersonalInfo
               tituloCard="PROYECTOS"
-              enlaceSeccion=""
+              enlaceSeccion="#portafolio"
               icono={IoGitNetwork}
               num="2"
             />
             <PersonalInfo
               tituloCard="EXPERIENCIA"
-              enlaceSeccion="#Experiencia"
+              enlaceSeccion="#portafolio"
               icono={IoTimerSharp}
               num="4"
               txt="AÑOS"
             />
             <PersonalInfo
               tituloCard="LENGUAJES"
-              enlaceSeccion=""
+              enlaceSeccion="#portafolio"
               icono={FaLaptopCode}
               num="+11"
             />
