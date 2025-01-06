@@ -5,6 +5,7 @@ import styles from "./SobreMi.module.css";
 import fotoUser from "../../img/fotoUser.png";
 import { PiReadCvLogoFill } from "react-icons/pi";
 import imgUser from "../../img/fotoUser.png";
+import PersonalInfo from "../PersonalInfo";
 
 type Props = {};
 
@@ -48,9 +49,11 @@ function SobreMi({}: Props) {
         </div>
         <div className={styles.infoSons}>
           <img src={imgUser} alt="" className={styles.imageContainer} />
+          <div className={styles.EspacioInfoPersonal}>
+            <PersonalInfo tituloCard="Hola" />
+          </div>
         </div>
       </div>
-      <div></div>
     </div>
   );
 }
