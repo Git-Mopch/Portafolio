@@ -91,3 +91,10 @@
   gap: 50px; /* Espacio entre los iconos */
   margin-top: 50px;
 }
+.herramienta {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center; /* Centra el icono dentro de cada contenedor */
+  align-items: center; /* Alinea el icono verticalmente */
+}

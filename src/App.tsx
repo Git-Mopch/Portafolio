@@ -46,7 +46,6 @@ function App() {
             element={
               <>
                 <Header />
-
                 <Main />
                 <SobreMi />
                 <Estudios />

@@ -3,6 +3,6 @@ import React from "react";
 type Props = {};
 
 const Formulario = (props: Props) => {
-  return <div></div>;
+  return <div>Formulario</div>;
 };
 export default Formulario;

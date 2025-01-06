@@ -26,6 +26,12 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { SiMongodb } from "react-icons/si";
 import { SiGnubash } from "react-icons/si";
 
+import { FaGitAlt } from "react-icons/fa6";
+import { FaWordpress } from "react-icons/fa";
+import { SiGooglemeet } from "react-icons/si";
+import { AiOutlineLinux } from "react-icons/ai";
+import { IoLogoWindows } from "react-icons/io5";
+
 function Portafolio() {
   const [activeContent, setActiveContent] = useState("contenido1");
 
@@ -171,7 +177,23 @@ function Portafolio() {
           </div>
         )}
         {activeContent === "contenido4" && (
-          <p>Este es el contenido del Botón 4</p>
+          <div className={styles.espacioHerramientas}>
+            <div className={styles.herramienta} title="Git">
+              <FaGitAlt size={70} color="white" />
+            </div>
+            <div className={styles.herramienta} title="WordPress">
+              <FaWordpress size={70} color="white" />
+            </div>
+            <div className={styles.herramienta} title="Google Meet">
+              <SiGooglemeet size={70} color="white" />
+            </div>
+            <div className={styles.herramienta} title="Linux">
+              <AiOutlineLinux size={70} color="white" />
+            </div>
+            <div className={styles.herramienta} title="Windows">
+              <IoLogoWindows size={70} color="white" />
+            </div>
+          </div>
         )}
       </div>
     </div>
