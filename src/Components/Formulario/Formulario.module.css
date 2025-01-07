@@ -1,0 +1,15 @@
+.tituloFormulario {
+  color: aliceblue;
+}
+
+.mainContacto {
+  width: 1200px;
+  display: flex;
+  gap: 30px;
+  background-color: aliceblue;
+  margin: 0 auto;
+  margin-top: 180px;
+}
+.espacioForm {
+  margin: 0 auto;
+}
