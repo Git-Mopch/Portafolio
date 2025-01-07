@@ -122,18 +122,7 @@ const Formulario = () => {
             )}
           </div>
 
-          {/* Botón de Enviar */}
-          <button
-            type="submit"
-            style={{
-              padding: "10px 20px",
-              backgroundColor: "#007BFF",
-              color: "#fff",
-              border: "none",
-              borderRadius: "5px",
-              cursor: "pointer",
-            }}
-          >
+          <button type="submit" className={style.estiloBoton}>
             Enviar
           </button>
         </form>

@@ -5,11 +5,18 @@
 .mainContacto {
   width: 1200px;
   display: flex;
-  gap: 30px;
+  gap: 50px;
   background-color: aliceblue;
   margin: 0 auto;
   margin-top: 180px;
 }
 .espacioForm {
   margin: 0 auto;
+}
+
+.estiloBoton {
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  margin-bottom: 20px;
 }
