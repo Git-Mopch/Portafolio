@@ -4,9 +4,15 @@
 
 .mainContacto {
   width: 1200px;
+  height: 550px;
   display: flex;
+  border-radius: 10px;
   gap: 50px;
-  background-color: aliceblue;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(145, 30, 199, 0.329);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
   margin: 0 auto;
   margin-top: 180px;
 }
@@ -19,4 +25,47 @@
   height: 40px;
   border-radius: 15px;
   margin-bottom: 20px;
+  backdrop-filter: blur(20px) saturate(64%);
+  -webkit-backdrop-filter: blur(20px) saturate(64%);
+  background-color: rgba(169, 130, 247, 0.48);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  transition: all 0.5s ease;
+  color: aliceblue;
+}
+.inputs {
+  border-radius: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.418);
+  font-family: "Open Sans", serif;
+}
+.labels {
+  font-family: "Poppins", serif;
+  color: #ebd3f8;
+}
+.tituloSobreMi {
+  padding: 40px;
+  text-align: center;
+  width: 800px;
+  font-size: 80px;
+  font-family: "Poppins", serif;
+  color: #bd6ee7;
+}
+
+.subtituloSobreMi {
+  margin: 0 auto;
+  text-align: left;
+  font-size: 20px;
+  width: 600px;
+  font-family: "Poppins", serif;
+  color: #ebd3f8;
+}
+.formulario {
+  margin-right: 100px;
+  margin-top: 80px;
+}
+
+.estiloBoton:hover {
+  color: #ebd3f8;
+  box-shadow: 0 0 10px #ad49e1, 0 0 20px #ad49e1, 0 0 30px #ad49e1,
+    0 0 40px #ad49e1;
 }

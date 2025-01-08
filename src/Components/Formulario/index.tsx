@@ -58,74 +58,99 @@ const Formulario = () => {
 
   return (
     <div className={style.mainContacto}>
-      <div className={style.espacioForm}>Hola</div>
       <div className={style.espacioForm}>
-        <h2 className={style.tituloFormulario}>Trabajemos juntos</h2>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          {/* Campo de Nombre */}
-          <div style={{ marginBottom: "15px" }}>
-            <label htmlFor="name">Nombre:</label>
-            <input
-              type="text"
-              id="name"
-              {...register("name", { required: "El nombre es obligatorio" })}
-              style={{ width: "100%", padding: "8px", marginTop: "5px" }}
-            />
-            {errors.name && (
-              <span style={{ color: "red" }}>
-                {String(errors.name.message || "")}
-              </span>
-            )}
-          </div>
+        {" "}
+        <h2 className={style.tituloSobreMi} id="Experiencia">
+          {" "}
+          <strong>¡Trabajemos juntos!</strong>
+        </h2>
+        <h3 className={style.subtituloSobreMi}>
+          ¿Tienes una idea, proyecto o colaboración en mente? Estoy abierto a
+          explorar nuevas oportunidades y trabajar juntos en algo increíble.{" "}
+          <br />
+          <br />
+          Compárteme los detalles de tu proyecto, y estaré encantado de discutir
+          cómo podemos hacer que suceda. ¡Hablemos pronto!
+        </h3>
+      </div>
+      <div className={style.espacioForm}>
+        <div className={style.formulario}>
+          {" "}
+          <form onSubmit={handleSubmit(onSubmit)}>
+            {/* Campo de Nombre */}
+            <div style={{ marginBottom: "15px" }}>
+              <label htmlFor="name" className={style.labels}>
+                Nombre:
+              </label>
+              <input
+                className={style.inputs}
+                type="text"
+                id="name"
+                {...register("name", { required: "El nombre es obligatorio" })}
+                style={{ width: "100%", padding: "8px", marginTop: "5px" }}
+              />
+              {errors.name && (
+                <span style={{ color: "red" }}>
+                  {String(errors.name.message || "")}
+                </span>
+              )}
+            </div>
 
-          {/* Campo de Correo */}
-          <div style={{ marginBottom: "15px" }}>
-            <label htmlFor="email">Correo:</label>
-            <input
-              type="email"
-              id="email"
-              {...register("email", {
-                required: "El correo es obligatorio",
-                pattern: {
-                  value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                  message: "El formato del correo no es válido",
-                },
-              })}
-              style={{ width: "100%", padding: "8px", marginTop: "5px" }}
-            />
-            {errors.email && (
-              <span style={{ color: "red" }}>
-                {String(errors.email.message || "")}
-              </span>
-            )}
-          </div>
+            {/* Campo de Correo */}
+            <div style={{ marginBottom: "15px" }}>
+              <label className={style.labels} htmlFor="email" id="formulario">
+                Correo:
+              </label>
+              <input
+                className={style.inputs}
+                type="email"
+                id="email"
+                {...register("email", {
+                  required: "El correo es obligatorio",
+                  pattern: {
+                    value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                    message: "El formato del correo no es válido",
+                  },
+                })}
+                style={{ width: "100%", padding: "8px", marginTop: "5px" }}
+              />
+              {errors.email && (
+                <span style={{ color: "red" }}>
+                  {String(errors.email.message || "")}
+                </span>
+              )}
+            </div>
 
-          {/* Campo de Texto */}
-          <div style={{ marginBottom: "15px" }}>
-            <label htmlFor="message">Mensaje:</label>
-            <textarea
-              id="message"
-              {...register("message", {
-                required: "El mensaje es obligatorio",
-              })}
-              style={{
-                width: "100%",
-                padding: "8px",
-                marginTop: "5px",
-                height: "100px",
-              }}
-            ></textarea>
-            {errors.message && (
-              <span style={{ color: "red" }}>
-                {String(errors.message.message || "")}
-              </span>
-            )}
-          </div>
+            {/* Campo de Texto */}
+            <div style={{ marginBottom: "15px" }}>
+              <label htmlFor="message" className={style.labels}>
+                Mensaje:
+              </label>
+              <textarea
+                className={style.inputs}
+                id="message"
+                {...register("message", {
+                  required: "El mensaje es obligatorio",
+                })}
+                style={{
+                  width: "100%",
+                  padding: "8px",
+                  marginTop: "5px",
+                  height: "100px",
+                }}
+              ></textarea>
+              {errors.message && (
+                <span style={{ color: "red" }}>
+                  {String(errors.message.message || "")}
+                </span>
+              )}
+            </div>
 
-          <button type="submit" className={style.estiloBoton}>
-            Enviar
-          </button>
-        </form>
+            <button type="submit" className={style.estiloBoton}>
+              Enviar
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );

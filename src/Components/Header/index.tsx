@@ -39,9 +39,9 @@ function Header({}: Props) {
           </li>
           <li>
             <a
-              href="#contact"
-              className={activeLink === "#contacto" ? styles.active : ""}
-              onClick={() => setActiveLink("#contacto")}
+              href="#formulario"
+              className={activeLink === "#formulario" ? styles.active : ""}
+              onClick={() => setActiveLink("#formulario")}
             >
               Contacto
             </a>

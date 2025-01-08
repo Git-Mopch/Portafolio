@@ -4,7 +4,7 @@ import Main from "./Components/Main";
 import Portafolios from "./Components/Portafolio";
 import SobreMi from "./Components/SobreMi";
 import Estudios from "./Components/Estudios";
-import Proyecto from "./Components/Proyectos";
+import Footer from "./Components/Footer";
 import Formulario from "./Components/Formulario";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -51,6 +51,7 @@ function App() {
                 <Estudios />
                 <Portafolios />
                 <Formulario />
+                <Footer />
               </>
             }
           />
