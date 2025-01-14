@@ -1,12 +1,30 @@
 .header {
   padding: 20px 20px;
-  margin-top: 20px;
-  margin-right: 150px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .headerNav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburgerLine {
+  width: 25px;
+  height: 3px;
+  background-color: #ad49e1;
 }
 
 .headerMenu {
@@ -45,4 +63,56 @@
   right: 0;
   height: 2px;
   background-color: #007bff;
+}
+
+.menuOpen {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .headerMenu {
+    display: none;
+    background-color: #3f0b5c;
+    color: beige;
+    width: 160px;
+    padding: 10px;
+    margin: 10px 0px 0px 20px;
+    border-radius: 10px;
+  }
+
+  .menuOpen {
+    display: flex;
+  }
+
+  .header {
+    margin-left: 20px;
+    margin-right: auto;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: auto;
+    justify-content: flex-start;
+  }
+
+  .headerMenu a {
+    font-size: 14px;
+  }
 }
