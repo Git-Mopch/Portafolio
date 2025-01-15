@@ -50,7 +50,6 @@ function App() {
                 <SobreMi />
                 <Estudios />
                 <Portafolios />
-                <Formulario />
                 <Footer />
               </>
             }
@@ -65,3 +64,10 @@ function App() {
 }
 
 export default App;
+
+/*
+
+                <Portafolios />
+                <Formulario />
+                <Footer />
+*/

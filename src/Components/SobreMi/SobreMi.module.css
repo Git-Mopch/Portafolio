@@ -89,4 +89,232 @@
   height: 300px;
   display: flex;
   gap: 50px;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en lugar de desbordarse */
+}
+@media screen and (max-width: 1199px) and (min-width: 978px) {
+  .tituloSobreMi {
+    font-size: 70px;
+  }
+  .subtituloSobreMi {
+    font-size: 20px;
+  }
+  .espacioInfo {
+    height: auto; /* Permite que el contenedor se adapte al contenido */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
+  }
+
+  .infoSons:nth-child(1) {
+    /* Texto de "Sobre mí" y "Me llamo Miguel" */
+    width: 100%;
+    text-align: center; /* Centra el texto */
+    font-size: 25px; /* Ajusta el tamaño del texto */
+    font-family: "Poppins", serif;
+    color: #ad49e1;
+  }
+
+  .infoSons:nth-child(2) {
+    /* Descripción centrada con espacio */
+    width: 90%;
+    text-align: center;
+    font-size: 16px; /* Ajusta el tamaño del texto */
+    margin: 10px 0; /* Espacio superior e inferior */
+    font-family: "Open Sans", serif;
+    color: aliceblue;
+  }
+
+  .infoSons:nth-child(3) {
+    /* Resto de elementos (imagen, botones, etc.) */
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 15px; /* Espacio entre los elementos */
+  }
+
+  .imageContainer {
+    width: 250px; /* Reduce el tamaño de la imagen */
+    height: 250px;
+    margin: 0; /* Elimina márgenes adicionales */
+  }
+
+  .botonCV {
+    margin-top: 10px;
+    font-size: 16px; /* Ajusta el tamaño del botón */
+    padding: 10px; /* Ajusta el relleno del botón */
+    width: 160px; /* Ajusta el ancho del botón */
+  }
+  /* Estilos para centrar el .tituloPresentacion y .descripcionPersonal */
+  .tituloPresentacion {
+    padding: 20px 0px 0px 0px; /* Ajusta el padding como desees */
+    text-align: center; /* Centra el texto */
+    color: #ebd3f8;
+    font-family: "Poppins", serif;
+    font-size: 45px;
+  }
+
+  .descripcionPersonal {
+    color: aliceblue;
+    font-family: "Open Sans", serif;
+    padding: 10px 20px; /* Ajusta el padding */
+    text-align: center; /* Centra el texto */
+    font-size: 17px; /* Ajusta el tamaño de la fuente si es necesario */
+  }
+  .EspacioInfoPersonal {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 976px) and (min-width: 481px) {
+  .tituloSobreMi {
+    font-size: 70px;
+  }
+  .subtituloSobreMi {
+    font-size: 20px;
+  }
+  .espacioInfo {
+    height: auto; /* Permite que el contenedor se adapte al contenido */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
+  }
+
+  .infoSons:nth-child(1) {
+    /* Texto de "Sobre mí" y "Me llamo Miguel" */
+    width: 100%;
+    text-align: center; /* Centra el texto */
+    font-size: 25px; /* Ajusta el tamaño del texto */
+    font-family: "Poppins", serif;
+    color: #ad49e1;
+  }
+
+  .infoSons:nth-child(2) {
+    /* Descripción centrada con espacio */
+    width: 90%;
+    text-align: center;
+    font-size: 16px; /* Ajusta el tamaño del texto */
+    margin: 10px 0; /* Espacio superior e inferior */
+    font-family: "Open Sans", serif;
+    color: aliceblue;
+  }
+
+  .infoSons:nth-child(3) {
+    /* Resto de elementos (imagen, botones, etc.) */
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 15px; /* Espacio entre los elementos */
+  }
+
+  .imageContainer {
+    width: 250px; /* Reduce el tamaño de la imagen */
+    height: 250px;
+    margin: 0; /* Elimina márgenes adicionales */
+  }
+
+  .botonCV {
+    margin-top: 10px;
+    font-size: 16px; /* Ajusta el tamaño del botón */
+    padding: 10px; /* Ajusta el relleno del botón */
+    width: 160px; /* Ajusta el ancho del botón */
+  }
+  /* Estilos para centrar el .tituloPresentacion y .descripcionPersonal */
+  .tituloPresentacion {
+    padding: 20px 0px 0px 0px; /* Ajusta el padding como desees */
+    text-align: center; /* Centra el texto */
+    color: #ebd3f8;
+    font-family: "Poppins", serif;
+    font-size: 45px;
+  }
+
+  .descripcionPersonal {
+    color: aliceblue;
+    font-family: "Open Sans", serif;
+    padding: 10px 20px; /* Ajusta el padding */
+    text-align: center; /* Centra el texto */
+    font-size: 17px; /* Ajusta el tamaño de la fuente si es necesario */
+  }
+  .EspacioInfoPersonal {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .mainSobreMi {
+    margin-top: 130px;
+  }
+  .tituloSobreMi {
+    font-size: 60px;
+  }
+  .subtituloSobreMi {
+    font-size: 20px;
+  }
+  .espacioInfo {
+    height: auto; /* Permite que el contenedor se adapte al contenido */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
+  }
+
+  .infoSons:nth-child(1) {
+    /* Texto de "Sobre mí" y "Me llamo Miguel" */
+    width: 100%;
+    text-align: center; /* Centra el texto */
+    font-size: 25px; /* Ajusta el tamaño del texto */
+    font-family: "Poppins", serif;
+    color: #ad49e1;
+  }
+
+  .infoSons:nth-child(2) {
+    /* Descripción centrada con espacio */
+    width: 90%;
+    text-align: center;
+    font-size: 16px; /* Ajusta el tamaño del texto */
+    margin: 10px 0; /* Espacio superior e inferior */
+    font-family: "Open Sans", serif;
+    color: aliceblue;
+  }
+
+  .infoSons:nth-child(3) {
+    /* Resto de elementos (imagen, botones, etc.) */
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 15px; /* Espacio entre los elementos */
+  }
+
+  .imageContainer {
+    width: 250px; /* Reduce el tamaño de la imagen */
+    height: 250px;
+    margin: 0; /* Elimina márgenes adicionales */
+  }
+
+  .botonCV {
+    margin-top: 10px;
+    font-size: 16px; /* Ajusta el tamaño del botón */
+    padding: 10px; /* Ajusta el relleno del botón */
+    width: 160px; /* Ajusta el ancho del botón */
+  }
+  /* Estilos para centrar el .tituloPresentacion y .descripcionPersonal */
+  .tituloPresentacion {
+    padding: 20px 0px 0px 0px; /* Ajusta el padding como desees */
+    text-align: center; /* Centra el texto */
+    color: #ebd3f8;
+    font-family: "Poppins", serif;
+    font-size: 45px;
+  }
+
+  .descripcionPersonal {
+    color: aliceblue;
+    font-family: "Open Sans", serif;
+    padding: 10px 20px; /* Ajusta el padding */
+    text-align: center; /* Centra el texto */
+    font-size: 17px; /* Ajusta el tamaño de la fuente si es necesario */
+  }
+  .EspacioInfoPersonal {
+    display: none;
+  }
 }

@@ -2,6 +2,8 @@
   display: flex;
   width: auto;
   height: 860px;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .mainBoxes {
@@ -28,6 +30,7 @@
   font-family: "Poppins", serif;
   margin-left: 120px;
 }
+
 .subtituloMain {
   color: azure;
   padding: 10px 0px 0px 90px;
@@ -35,6 +38,7 @@
   font-family: "Poppins", serif;
   margin-left: 120px;
 }
+
 .iconoDisponible {
   margin-bottom: 4px;
   margin-left: 3px;
@@ -94,8 +98,185 @@
 
 .iconDevelop {
   color: #ffffff;
+  font-size: 600px;
   margin: 50px;
-  margin-left: 160px;
   text-shadow: 0 0 10px #ad49e1, 0 0 20px #ad49e1, 0 0 30px #ad49e1;
   filter: drop-shadow(0 0 10px #ad49e1) drop-shadow(0 0 20px #ad49e1);
+}
+
+@media screen and (max-width: 1742px) and (min-width: 1124px) {
+  .mainBox {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .tituloMain {
+    font-size: 100px;
+    margin-left: 10px;
+  }
+
+  .subtituloMain {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+
+  .botonDisponible {
+    left: 100px;
+    top: 50px;
+  }
+
+  .iconDevelop {
+    font-size: 500px;
+    position: relative;
+    right: 0px;
+  }
+
+  .botonesProfile {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 978px) {
+  .mainBox {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .tituloMain {
+    font-size: 50px;
+    margin-left: 10px;
+  }
+
+  .subtituloMain {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+
+  .botonDisponible {
+    left: 100px;
+    top: 50px;
+  }
+
+  .espacioLenguajes {
+    display: none;
+  }
+
+  .iconDevelop {
+    font-size: 400px;
+    position: relative;
+    right: 10px;
+  }
+
+  .botonesProfile {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 976px) and (min-width: 481px) {
+  .mainBox {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .tituloMain {
+    font-size: 50px;
+    margin-left: 10px;
+  }
+
+  .subtituloMain {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+
+  .botonDisponible {
+    left: 100px;
+    top: 50px;
+  }
+
+  .espacioLenguajes {
+    display: none;
+  }
+
+  .iconDevelop {
+    font-size: 300px;
+    position: relative;
+    right: 20px;
+  }
+
+  .botonesProfile {
+    width: 150px;
+    height: 60px;
+    font-size: 15px;
+  }
+  .espacioBotones {
+    margin-left: 65px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .mainBox {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 140px;
+    padding: 20px;
+  }
+
+  .mainBoxes {
+    width: 100%;
+    text-align: center;
+  }
+
+  .tituloMain {
+    font-size: 70px;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .subtituloMain {
+    font-size: 20px;
+    margin: 0;
+    padding: 5px 0;
+  }
+
+  .botonDisponible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    width: auto;
+    padding: 5px 10px;
+  }
+
+  .iconDevelop {
+    font-size: 300px;
+    margin: 20px 0;
+  }
+
+  .espacioLenguajes {
+    display: none;
+  }
+
+  .lenguajes {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .botonesProfile {
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+    margin-top: 25px;
+  }
+
+  .iconosButton {
+    margin-right: 5px;
+    font-size: 16px;
+  }
 }

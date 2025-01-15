@@ -30,21 +30,23 @@ function Main({}: Props) {
         </div>
 
         <center>
-          <a href="#portafolio">
-            <button className={styles.botonesProfile}>
-              <MdOpenInNew className={styles.iconosButton} />
-              Ver Proyectos
-            </button>
-          </a>
+          <div className={styles.espacioBotones}>
+            <a href="#portafolio">
+              <button className={styles.botonesProfile}>
+                <MdOpenInNew className={styles.iconosButton} />
+                Ver Proyectos
+              </button>
+            </a>
 
-          <button className={styles.botonesProfile}>
-            <FaGithub className={styles.iconosButton} />
-            Github
-          </button>
+            <button className={styles.botonesProfile}>
+              <FaGithub className={styles.iconosButton} />
+              Github
+            </button>
+          </div>
         </center>
       </div>
       <div className={styles.mainBoxes}>
-        <FaCode className={styles.iconDevelop} size={600} />
+        <FaCode className={styles.iconDevelop} />
       </div>
     </div>
   );

@@ -87,3 +87,13 @@
   margin-top: 100px;
   color: #7a1cac;
 }
+
+@media screen and (max-width: 430px) {
+  .tituloSobreMi {
+    font-size: 60px;
+  }
+  .subtituloSobreMi {
+    font-size: 20px;
+    padding: 20px;
+  }
+}
