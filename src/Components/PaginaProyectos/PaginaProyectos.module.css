@@ -101,6 +101,36 @@
   color: aliceblue;
   font-family: "Open Sans", serif;
 }
+@media screen and (max-width: 1399px) and (min-width: 430px) {
+  .boxMainProyect {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .imagenProyecto {
+    width: 100%;
+    max-width: 560px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 20px;
+  }
+
+  .mainFuncionalidad {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+    padding: 20px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(145, 30, 199, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+}
 
 @media screen and (max-width: 430px) {
   .buttonSettings {
@@ -115,9 +145,6 @@
     margin-top: 5px;
   }
 
-  /* Ajuste para que el contenido no quede oculto debajo del header */
-
-  /* Estructura del Proyecto */
   .boxMainProyect {
     display: flex;
     flex-direction: column;
@@ -130,13 +157,11 @@
     padding: 10px;
   }
 
-  /* Título del Proyecto */
   .tituloProyecto {
     font-size: 40px;
     text-align: center;
   }
 
-  /* Imagen del Proyecto */
   .imagenProyecto {
     width: 100%;
     max-width: 380px;
@@ -144,7 +169,6 @@
     display: block;
   }
 
-  /* Descripción del Proyecto */
   .textoProyecto {
     font-size: 20px;
     text-align: left;
@@ -153,7 +177,6 @@
     border-radius: 12px;
   }
 
-  /* Funcionalidad */
   .mainFuncionalidad {
     display: flex;
     flex-direction: column;

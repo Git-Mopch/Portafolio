@@ -68,9 +68,9 @@
   margin: 0 auto;
   width: 800px;
   display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se muevan a una nueva línea cuando se necesite */
-  justify-content: center; /* Centra los iconos horizontalmente */
-  gap: 50px; /* Espacio entre los iconos */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
   margin-top: 50px;
 }
 
@@ -78,26 +78,45 @@
   width: 120px;
   height: 120px;
   display: flex;
-  justify-content: center; /* Centra el icono dentro de cada contenedor */
-  align-items: center; /* Alinea el icono verticalmente */
+  justify-content: center;
+  align-items: center;
 }
 
 .espacioHerramientas {
   margin: 0 auto;
   width: 800px;
   display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se muevan a una nueva línea cuando se necesite */
-  justify-content: center; /* Centra los iconos horizontalmente */
-  gap: 50px; /* Espacio entre los iconos */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
   margin-top: 50px;
 }
 .herramienta {
   width: 120px;
   height: 120px;
   display: flex;
-  justify-content: center; /* Centra el icono dentro de cada contenedor */
-  align-items: center; /* Alinea el icono verticalmente */
+  justify-content: center;
+  align-items: center;
 }
+@media screen and (max-width: 976px) and (min-width: 481px) {
+  .mainBtn {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .Btn {
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 430px) {
   .tituloSobreMi {
     text-align: center;
@@ -108,36 +127,33 @@
   }
   .mainBtn {
     display: grid;
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* Crea dos columnas de igual tamaño */
-    gap: 10px; /* Espaciado entre los botones */
-    width: 100%; /* Asegura que ocupe todo el ancho disponible */
-    max-width: 300px; /* Limita el ancho máximo */
-    margin: 0 auto; /* Centra el contenedor */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
     padding: 10px;
   }
 
   .Btn {
-    width: 100%; /* Asegura que cada botón ocupe toda la celda de la cuadrícula */
-    height: 60px; /* Ajusta la altura de los botones */
-    font-size: 14px; /* Reduce el tamaño de la fuente */
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
   }
   .espacioLenguajes,
   .espacioHerramientas {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea cuando no quepan */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    gap: 10px; /* Espaciado entre los elementos */
-    width: 100%; /* Ocupa todo el ancho disponible */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
   }
 
   .lenguaje,
   .herramienta {
-    flex: 1 1 calc(50% - 10px); /* Hace que ocupen el 50% del ancho con espacio entre ellos */
-    max-width: 120px; /* Máximo tamaño permitido */
-    height: auto; /* Ajusta la altura automáticamente */
+    flex: 1 1 calc(50% - 10px);
+    max-width: 120px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;

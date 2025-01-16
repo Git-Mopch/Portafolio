@@ -12,7 +12,7 @@
 .logoSlider {
   display: flex;
   animation: slideshow 12s infinite linear;
-  will-change: transform; /* Indica al navegador que la propiedad transform cambiará */
+  will-change: transform; /
 }
 
 @keyframes slideshow {

@@ -1,21 +1,24 @@
 .mainContacto {
-  width: 90%; /* Hace que el formulario se adapte al ancho de la pantalla */
-  max-width: 800px; /* Establece un ancho máximo para evitar que sea demasiado grande */
-  height: auto; /* Ajusta la altura automáticamente según el contenido */
+  width: 90%;
+  max-width: 800px;
+  height: auto;
   display: flex;
-  flex-direction: column; /* Apila los elementos verticalmente */
-  align-items: center; /* Centra los elementos horizontalmente */
-  justify-content: center; /* Centra los elementos verticalmente */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-radius: 10px;
   gap: 20px;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(145, 30, 199, 0.329);
   border: 1px solid rgba(255, 255, 255, 0.125);
-  margin: 100px auto; /* Centra el formulario en la página */
-  padding: 20px; /* Agrega espacio interno */
+  margin: 100px auto;
+  padding: 20px;
 }
-
+.labels {
+  color: aliceblue;
+  font-family: "Open Sans", serif;
+}
 .espacioForm {
   width: 100%;
   text-align: center;
@@ -23,19 +26,21 @@
 
 .formulario {
   width: 100%;
-  max-width: 500px; /* Limita el ancho del formulario */
-  margin: 0 auto; /* Centra horizontalmente */
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .tituloSobreMi {
-  font-size: 36px;
+  font-size: 46px;
   width: 100%;
+  color: aliceblue;
 }
 
 .subtituloSobreMi {
-  width: 100%;
-  max-width: 500px; /* Hace que el subtítulo no sea demasiado ancho */
-  text-align: center;
+  text-align: left;
+  padding: 15px 80px 0px 80px;
+  color: aliceblue;
+  font-size: 20px;
 }
 
 .inputs {
@@ -58,7 +63,6 @@
   color: aliceblue;
 }
 
-/* Estilos para pantallas pequeñas */
 @media screen and (max-width: 430px) {
   .tituloSobreMi {
     font-size: 24px;
@@ -69,6 +73,7 @@
   .subtituloSobreMi {
     font-size: 16px;
     color: aliceblue;
+    padding: 15px;
   }
 
   .mainContacto {
