@@ -2,7 +2,7 @@ import React from "react";
 import stylesC from "./Proyectos.module.css";
 import { GoArrowUpRight } from "react-icons/go";
 import { useNavigate } from "react-router-dom";
-
+import { useTranslation } from "react-i18next"; // Importar hook de i18next
 type Props = {
   imgFondo?: string;
   tituloProyecto?: string;
@@ -19,6 +19,8 @@ export default function Proyectos({
   textoProyecto,
   urlProyecto,
 }: Props) {
+  const { t } = useTranslation(); // Usar el hook de i18next
+
   const navigate = useNavigate();
 
   return (
@@ -41,7 +43,7 @@ export default function Proyectos({
           className={stylesC.verProyectoSettings}
           style={{ cursor: "pointer" }}
         >
-          Ver más <GoArrowUpRight />
+          {t("verMas")} <GoArrowUpRight />
         </a>
       </div>
     </div>

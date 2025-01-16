@@ -7,44 +7,37 @@ import { IoTimerSharp } from "react-icons/io5";
 
 import { FaLaptopCode } from "react-icons/fa6";
 import { IoGitNetwork } from "react-icons/io5";
+import { useTranslation } from "react-i18next"; // Importar hook de i18next
 
 type Props = {};
 
 function SobreMi({}: Props) {
+  const { t } = useTranslation(); // Usar el hook de i18next
+
   return (
     <div className={styles.mainSobreMi} id="sobreMi">
       <h2 className={styles.tituloSobreMi}>
         {" "}
-        <strong>Sobre Mí</strong>
+        <strong>{t("tituloSobreMi")}</strong>
       </h2>
-      <h3 className={styles.subtituloSobreMi}>
-        "Si pudes imaginarlo, puedes crearlo"
-      </h3>
+      <h3 className={styles.subtituloSobreMi}>{t("subtituloSobreMi")}</h3>
       <div className={styles.espacioInfo}>
         <div className={styles.infoSons}>
           <h2 className={styles.tituloPresentacion}>
             <span style={{ color: "#ad49e1", fontSize: 35 }}>
-              <strong>Hola!, Me llamo</strong>
+              <strong>{t("sobreMiHola")}</strong>
             </span>
             <br />
-            Miguel Pomares
+            {t("sobreMiNombre")}
           </h2>
-          <p className={styles.descripcionPersonal}>
-            Holaa!🤓 me llamo Miguel, soy un joven de 21 años apasionado por el
-            aprendizaje y la innovación. Tengo experiencia en el trato activo
-            con el cliente, y en el área del desarrollo web, destaco por mi
-            capacidad para adaptarme rápidamente a nuevos desafíos. Estoy
-            comprometido con la mejora continua y busco siempre aportar valor a
-            los proyectos en los que participo. Soy una persona proactiva, con
-            una fuerte ética de trabajo y orientada a resultados.
-          </p>
+          <p className={styles.descripcionPersonal}>{t("textoSobreMi")}</p>
           <center>
             <button className={styles.botonCV}>
               <PiReadCvLogoFill
                 size={20}
                 style={{ marginBottom: 5, marginRight: 6 }}
               />
-              Descargar CV
+              {t("botonCv")}
             </button>
           </center>
         </div>
@@ -52,20 +45,20 @@ function SobreMi({}: Props) {
           <img src={imgUser} alt="" className={styles.imageContainer} />
           <div className={styles.EspacioInfoPersonal}>
             <PersonalInfo
-              tituloCard="PROYECTOS"
+              tituloCard={t("botonSobreMi1")}
               enlaceSeccion="#portafolio"
               icono={IoGitNetwork}
               num="2"
             />
             <PersonalInfo
-              tituloCard="EXPERIENCIA"
+              tituloCard={t("botonSobreMi2")}
               enlaceSeccion="#portafolio"
               icono={IoTimerSharp}
               num="4"
-              txt="AÑOS"
+              txt={t("botonSobreMi2Sub")}
             />
             <PersonalInfo
-              tituloCard="LENGUAJES"
+              tituloCard={t("botonSobreMi3")}
               enlaceSeccion="#portafolio"
               icono={FaLaptopCode}
               num="+11"

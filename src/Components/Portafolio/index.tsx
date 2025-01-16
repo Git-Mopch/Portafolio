@@ -32,14 +32,17 @@ import { SiGooglemeet } from "react-icons/si";
 import { AiOutlineLinux } from "react-icons/ai";
 import { IoLogoWindows } from "react-icons/io5";
 
+import { useTranslation } from "react-i18next"; // Importar hook de i18next
+
 function Portafolio() {
   const [activeContent, setActiveContent] = useState("contenido1");
+  const { t } = useTranslation(); // Usar el hook de i18next
 
   return (
     <div className={styles.mainPortafolio}>
       <h2 className={styles.tituloSobreMi} id="portafolio">
         {" "}
-        <strong>Portafolio</strong>
+        <strong>{t("tituloPortafolio")}</strong>
       </h2>
 
       <div className={styles.mainBtn}>
@@ -50,7 +53,7 @@ function Portafolio() {
           onClick={() => setActiveContent("contenido1")}
         >
           <FaCodeBranch color="white" />
-          <br /> Proyectos
+          <br /> {t("portafolios1")}
         </button>
         <button
           className={`${styles.Btn} ${
@@ -60,7 +63,7 @@ function Portafolio() {
         >
           <BsFillFileEarmarkPdfFill color="white" />
           <br />
-          Certificados
+          {t("portafolios2")}
         </button>
         <button
           className={`${styles.Btn} ${
@@ -70,7 +73,7 @@ function Portafolio() {
         >
           <AiFillCode color="white" />
           <br />
-          Lenguajes
+          {t("portafolios3")}
         </button>
         <button
           className={`${styles.Btn} ${
@@ -79,7 +82,7 @@ function Portafolio() {
           onClick={() => setActiveContent("contenido4")}
         >
           <FaTools color="white" /> <br />
-          Herramientas
+          {t("portafolios4")}
         </button>
       </div>
 
@@ -90,14 +93,14 @@ function Portafolio() {
               tituloProyecto="Livecan"
               urlProyecto="/livecan"
               imgFondo={imgLivecan}
-              textoProyecto="LiveCan ofrece mordedores innovadores y resistentes para perros, diseñados para promover su salud dental y entretenimiento. Calidad y diversión en cada mordida. 🐾"
+              textoProyecto={t("proyecto1")}
             />
 
             <Proyecto
               tituloProyecto="Laroye"
               urlProyecto="/laroye"
               imgFondo={imgLaroye}
-              textoProyecto="Laroye Café es un lugar acogedor y familiar donde puedes disfrutar de una experiencia gastronómica única, con productos artesanales y un ambiente joven. ☕"
+              textoProyecto={t("proyecto2")}
             />
           </div>
         )}
@@ -115,7 +118,7 @@ function Portafolio() {
                 src={imgCertificadoKotlin}
                 alt="Imagen Certificado curso de Kotlin"
               />
-              <figcaption>Curso de desarrollo con Kotlin</figcaption>
+              <figcaption>Kotlin Development Course</figcaption>
             </a>
             <a
               href={imgCertificadoBootcampWeb}

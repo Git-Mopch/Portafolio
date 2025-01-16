@@ -5,17 +5,21 @@ import { MdOpenInNew } from "react-icons/md";
 import { FaGithub } from "react-icons/fa6";
 import { FaCode } from "react-icons/fa6";
 
+import { useTranslation } from "react-i18next"; // Importar hook de i18next
+
 type Props = {};
 
 const textoProfesion = "<Web Developer/>";
 
 function Main({}: Props) {
+  const { t } = useTranslation(); // Usar el hook de i18next
+
   return (
     <div className={styles.mainBox}>
       <div className={styles.mainBoxes}>
         <button disabled={true} className={styles.botonDisponible}>
           <FcApproval size={20} className={styles.iconoDisponible} />
-          <strong>Disponible</strong>
+          <strong>{t("available")}</strong>
         </button>
         <h1 className={styles.tituloMain}>
           <strong>Frontend</strong> <br />
@@ -34,7 +38,7 @@ function Main({}: Props) {
             <a href="#portafolio">
               <button className={styles.botonesProfile}>
                 <MdOpenInNew className={styles.iconosButton} />
-                Ver Proyectos
+                {t("projects")}
               </button>
             </a>
 
