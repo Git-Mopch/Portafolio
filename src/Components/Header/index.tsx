@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import styles from "./styleHeader.module.css";
-
+import { useTranslation } from "react-i18next"; // Importar hook de i18next
 type Props = {};
 
 function Header({}: Props) {
+  const { t } = useTranslation(); // Usar el hook de i18next
+
   const [activeLink, setActiveLink] = useState("#home");
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -51,7 +53,7 @@ function Header({}: Props) {
               className={activeLink === "#home" ? styles.active : ""}
               onClick={() => setActiveLink("#home")}
             >
-              Inicio
+              {t("inicio")}
             </a>
           </li>
           <li>
@@ -60,7 +62,7 @@ function Header({}: Props) {
               className={activeLink === "#sobreMi" ? styles.active : ""}
               onClick={() => setActiveLink("#sobreMi")}
             >
-              Sobre Mi
+              {t("sobreMi")}{" "}
             </a>
           </li>
           <li>
@@ -69,7 +71,7 @@ function Header({}: Props) {
               className={activeLink === "#portafolio" ? styles.active : ""}
               onClick={() => setActiveLink("#portafolio")}
             >
-              Portafolio
+              {t("portafolio")}
             </a>
           </li>
           <li>
@@ -78,7 +80,7 @@ function Header({}: Props) {
               className={activeLink === "#formulario" ? styles.active : ""}
               onClick={() => setActiveLink("#formulario")}
             >
-              Contacto
+              {t("contacto")}
             </a>
           </li>
         </ul>

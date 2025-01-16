@@ -55,6 +55,22 @@ i18n.use(initReactI18next).init({
         proyecto2:
           "Laroye Café is a cozy and family-friendly place where you can enjoy a unique gastronomic experience, with artisanal products and a young atmosphere. ☕",
         verMas: "See More",
+
+        formTitulo: "Let's work together!",
+        formtextopt1:
+          "Do you have an idea, project, or collaboration in mind? I'm open to exploring new opportunities and working together on something amazing.",
+        formtextopt2:
+          "Share the details of your project, and I'll be happy to discuss how we can make it happen. Let's talk soon!",
+        formNombre: "Name:",
+        formMail: "Email:",
+        formTextoMensaje: "Message:",
+        formBtnTexto: "Send",
+        toastexito: "Sent successfully",
+        toastError: "There was an issue sending the email: ",
+        inicio: "Home",
+        sobreMi: "About Me",
+        portafolio: "Portafolio",
+        contacto: "Contact",
       },
     },
     es: {
@@ -103,6 +119,24 @@ i18n.use(initReactI18next).init({
         proyecto2:
           "Laroye Café es un lugar acogedor y familiar donde puedes disfrutar de una experiencia gastronómica única, con productos artesanales y un ambiente joven. ☕",
         verMas: "Ver Más",
+
+        formTitulo: "¡Trabajemos juntos!",
+        formtextopt1:
+          "¿Tienes una idea, proyecto o colaboración en mente? Estoy abierto a explorar nuevas oportunidades y trabajar juntos en algo increíble.",
+        formtextopt2:
+          "Compárteme los detalles de tu proyecto, y estaré encantado de discutir cómo podemos hacer que suceda. ¡Hablemos pronto!",
+        formNombre: "Nombre:",
+        formMail: "Correo:",
+        formTextoMensaje: "Mensaje:",
+        formBtnTexto: "Eviar",
+
+        toastexito: "Enviado con éxito",
+        toastError: "Hubo un problema enviando el correo: ",
+
+        inicio: "Inicio",
+        sobreMi: "Sobre Mi",
+        portafolio: "Portafolio",
+        contacto: "Contacto",
       },
     },
   },

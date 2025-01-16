@@ -4,6 +4,7 @@ import emailjs from "emailjs-com";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 import style from "./Formulario.module.css";
+import { useTranslation } from "react-i18next"; // Importar hook de i18next
 // Definimos el tipo de datos del formulario
 interface FormData {
   name: string;
@@ -12,6 +13,8 @@ interface FormData {
 }
 
 const Formulario = () => {
+  const { t } = useTranslation(); // Usar el hook de i18next
+
   // Inicializamos el hook useForm con el tipo FormData
   const {
     register, // Para registrar los inputs
@@ -31,7 +34,7 @@ const Formulario = () => {
       .then(
         () => {
           Toastify({
-            text: "Enviado con éxito",
+            text: t("toastexito"), // Corregido para usar la traducción
             duration: 3000,
             close: true,
             gravity: "top",
@@ -43,7 +46,7 @@ const Formulario = () => {
         },
         (error) => {
           Toastify({
-            text: `Hubo un problema enviando el correo: ${error.text}`,
+            text: `${t("toastError")} ${error.text}`, // Corregido para usar la traducción
             duration: 3000,
             close: true,
             gravity: "top",
@@ -62,15 +65,12 @@ const Formulario = () => {
         {" "}
         <h2 className={style.tituloSobreMi} id="Experiencia">
           {" "}
-          <strong>¡Trabajemos juntos!</strong>
+          <strong>{t("formTitulo")}</strong>
         </h2>
         <h3 className={style.subtituloSobreMi}>
-          ¿Tienes una idea, proyecto o colaboración en mente? Estoy abierto a
-          explorar nuevas oportunidades y trabajar juntos en algo increíble.{" "}
+          {t("formtextopt1")} <br />
           <br />
-          <br />
-          Compárteme los detalles de tu proyecto, y estaré encantado de discutir
-          cómo podemos hacer que suceda. ¡Hablemos pronto!
+          {t("formtextopt2")}
         </h3>
       </div>
       <div className={style.espacioForm}>
@@ -80,7 +80,7 @@ const Formulario = () => {
             {/* Campo de Nombre */}
             <div style={{ marginBottom: "15px" }}>
               <label htmlFor="name" className={style.labels}>
-                Nombre:
+                {t("formNombre")}
               </label>
               <input
                 className={style.inputs}
@@ -99,7 +99,7 @@ const Formulario = () => {
             {/* Campo de Correo */}
             <div style={{ marginBottom: "15px" }}>
               <label className={style.labels} htmlFor="email" id="formulario">
-                Correo:
+                {t("formMail")}
               </label>
               <input
                 className={style.inputs}
@@ -124,7 +124,7 @@ const Formulario = () => {
             {/* Campo de Texto */}
             <div style={{ marginBottom: "15px" }}>
               <label htmlFor="message" className={style.labels}>
-                Mensaje:
+                {t("formTextoMensaje")}
               </label>
               <textarea
                 className={style.inputs}
@@ -147,7 +147,7 @@ const Formulario = () => {
             </div>
 
             <button type="submit" className={style.estiloBoton}>
-              Enviar
+              {t("formBtnTexto")}
             </button>
           </form>
         </div>
