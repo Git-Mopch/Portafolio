@@ -98,3 +98,48 @@
   justify-content: center; /* Centra el icono dentro de cada contenedor */
   align-items: center; /* Alinea el icono verticalmente */
 }
+@media screen and (max-width: 430px) {
+  .tituloSobreMi {
+    text-align: center;
+    font-size: 60px;
+    font-family: "Poppins", serif;
+    color: #ad49e1;
+    padding-bottom: 50px;
+  }
+  .mainBtn {
+    display: grid;
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Crea dos columnas de igual tamaño */
+    gap: 10px; /* Espaciado entre los botones */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    max-width: 300px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 10px;
+  }
+
+  .Btn {
+    width: 100%; /* Asegura que cada botón ocupe toda la celda de la cuadrícula */
+    height: 60px; /* Ajusta la altura de los botones */
+    font-size: 14px; /* Reduce el tamaño de la fuente */
+  }
+  .espacioLenguajes,
+  .espacioHerramientas {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea cuando no quepan */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 10px; /* Espaciado entre los elementos */
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+
+  .lenguaje,
+  .herramienta {
+    flex: 1 1 calc(50% - 10px); /* Hace que ocupen el 50% del ancho con espacio entre ellos */
+    max-width: 120px; /* Máximo tamaño permitido */
+    height: auto; /* Ajusta la altura automáticamente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

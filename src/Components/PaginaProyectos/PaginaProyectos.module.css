@@ -101,3 +101,80 @@
   color: aliceblue;
   font-family: "Open Sans", serif;
 }
+
+@media screen and (max-width: 430px) {
+  .buttonSettings {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .spanSettings {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  /* Ajuste para que el contenido no quede oculto debajo del header */
+
+  /* Estructura del Proyecto */
+  .boxMainProyect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .boxInnerMain {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Título del Proyecto */
+  .tituloProyecto {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  /* Imagen del Proyecto */
+  .imagenProyecto {
+    width: 100%;
+    max-width: 380px;
+    margin: 10px auto;
+    display: block;
+  }
+
+  /* Descripción del Proyecto */
+  .textoProyecto {
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+  }
+
+  /* Funcionalidad */
+  .mainFuncionalidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 15px;
+  }
+  .iconosLenguajesProyecto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .FuncionalidadProyecto {
+    font-size: 30px;
+  }
+
+  .ListItems {
+    font-size: 20px;
+  }
+}

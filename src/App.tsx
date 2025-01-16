@@ -6,18 +6,7 @@ import SobreMi from "./Components/SobreMi";
 import Estudios from "./Components/Estudios";
 import Footer from "./Components/Footer";
 import Formulario from "./Components/Formulario";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
-import imagenLivecan from "../src/img/LivecanProyectImage.png";
-import imagenLaroye from "../src/img/LaroyeProyectImage.png";
-
-import { FaReact } from "react-icons/fa";
-import { FaWordpress } from "react-icons/fa";
-import { RiPhpFill } from "react-icons/ri";
-import { SiPhpmyadmin } from "react-icons/si";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { BiLogoTypescript } from "react-icons/bi";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Livecan from "./PaginasProyectos/livecan";
 import Laroye from "./PaginasProyectos/laroye";
 
@@ -50,6 +39,7 @@ function App() {
                 <SobreMi />
                 <Estudios />
                 <Portafolios />
+                <Formulario />
                 <Footer />
               </>
             }
@@ -64,10 +54,3 @@ function App() {
 }
 
 export default App;
-
-/*
-
-                <Portafolios />
-                <Formulario />
-                <Footer />
-*/

@@ -1,71 +1,84 @@
-.tituloFormulario {
-  color: aliceblue;
-}
-
 .mainContacto {
-  width: 1200px;
-  height: 550px;
+  width: 90%; /* Hace que el formulario se adapte al ancho de la pantalla */
+  max-width: 800px; /* Establece un ancho máximo para evitar que sea demasiado grande */
+  height: auto; /* Ajusta la altura automáticamente según el contenido */
   display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
   border-radius: 10px;
-  gap: 50px;
+  gap: 20px;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(145, 30, 199, 0.329);
-  border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
-  margin: 0 auto;
-  margin-top: 180px;
-}
-.espacioForm {
-  margin: 0 auto;
+  margin: 100px auto; /* Centra el formulario en la página */
+  padding: 20px; /* Agrega espacio interno */
 }
 
-.estiloBoton {
-  width: 100px;
-  height: 40px;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  backdrop-filter: blur(20px) saturate(64%);
-  -webkit-backdrop-filter: blur(20px) saturate(64%);
-  background-color: rgba(169, 130, 247, 0.48);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
-  transition: all 0.5s ease;
-  color: aliceblue;
+.espacioForm {
+  width: 100%;
+  text-align: center;
 }
+
+.formulario {
+  width: 100%;
+  max-width: 500px; /* Limita el ancho del formulario */
+  margin: 0 auto; /* Centra horizontalmente */
+}
+
+.tituloSobreMi {
+  font-size: 36px;
+  width: 100%;
+}
+
+.subtituloSobreMi {
+  width: 100%;
+  max-width: 500px; /* Hace que el subtítulo no sea demasiado ancho */
+  text-align: center;
+}
+
 .inputs {
+  width: 100%;
+  padding: 10px;
   border-radius: 15px;
   border: 2px solid rgba(0, 0, 0, 0.418);
   font-family: "Open Sans", serif;
 }
-.labels {
-  font-family: "Poppins", serif;
-  color: #ebd3f8;
-}
-.tituloSobreMi {
-  padding: 40px;
-  text-align: center;
-  width: 800px;
-  font-size: 80px;
-  font-family: "Poppins", serif;
-  color: #bd6ee7;
+
+.estiloBoton {
+  width: 100%;
+  max-width: 200px;
+  height: 40px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  background-color: rgba(169, 130, 247, 0.48);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  transition: all 0.5s ease;
+  color: aliceblue;
 }
 
-.subtituloSobreMi {
-  margin: 0 auto;
-  text-align: left;
-  font-size: 20px;
-  width: 600px;
-  font-family: "Poppins", serif;
-  color: #ebd3f8;
-}
-.formulario {
-  margin-right: 100px;
-  margin-top: 80px;
-}
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 430px) {
+  .tituloSobreMi {
+    font-size: 24px;
+    padding: 20px;
+    color: aliceblue;
+  }
 
-.estiloBoton:hover {
-  color: #ebd3f8;
-  box-shadow: 0 0 10px #ad49e1, 0 0 20px #ad49e1, 0 0 30px #ad49e1,
-    0 0 40px #ad49e1;
+  .subtituloSobreMi {
+    font-size: 16px;
+    color: aliceblue;
+  }
+
+  .mainContacto {
+    width: 95%;
+    margin: 50px auto;
+    padding: 15px;
+    color: aliceblue;
+  }
+
+  .formulario {
+    max-width: 100%;
+  }
 }

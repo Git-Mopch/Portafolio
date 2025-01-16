@@ -310,9 +310,9 @@
   .descripcionPersonal {
     color: aliceblue;
     font-family: "Open Sans", serif;
-    padding: 10px 20px; /* Ajusta el padding */
+    padding: 10px 28px; /* Ajusta el padding */
     text-align: center; /* Centra el texto */
-    font-size: 17px; /* Ajusta el tamaño de la fuente si es necesario */
+    font-size: 18px; /* Ajusta el tamaño de la fuente si es necesario */
   }
   .EspacioInfoPersonal {
     display: none;
