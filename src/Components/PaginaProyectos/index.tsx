@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { TiPuzzle } from "react-icons/ti";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { useTranslation } from "react-i18next"; // Importar hook
 
 import styles from "./PaginaProyectos.module.css";
 type Props = {
@@ -23,6 +24,8 @@ type Props = {
 };
 
 const PaginaProyectos = (props: Props) => {
+  const { t } = useTranslation();
+
   const gitButtonText = props.gitTrue ? "Github" : "No Disponible";
 
   return (
@@ -31,11 +34,11 @@ const PaginaProyectos = (props: Props) => {
         <button className={styles.buttonSettings}>
           <Link to="/" style={{ textDecoration: "none", color: "white" }}>
             <IoArrowBackOutline style={{ marginBottom: 4, marginRight: 5 }} />
-            Volver inicio
+            {t("volverInicio")}
           </Link>
         </button>
         <span className={styles.spanSettings}>
-          <strong>Proyectos</strong> / {props.nombreProyecto}
+          <strong>{t("proyectos")}</strong> / {props.nombreProyecto}
         </span>
       </header>
 
@@ -62,7 +65,7 @@ const PaginaProyectos = (props: Props) => {
           <div>
             <h2 className={styles.LenguajesProyecto}>
               <FaCode size={30} style={{ marginBottom: 6, marginRight: 5 }} />
-              Lenguajes
+              {t("lenguajes")}
             </h2>
             <hr className={styles.hrStyleSettings} />
             <div className={styles.mainLenguajes}>
@@ -107,7 +110,7 @@ const PaginaProyectos = (props: Props) => {
             {" "}
             <h2 className={styles.FuncionalidadProyecto}>
               <TiPuzzle size={40} style={{ marginBottom: 12 }} />
-              Funcionalidad
+              {t("funcionalidad")}
             </h2>
             <ul>
               {props.funcionalidad1 && (

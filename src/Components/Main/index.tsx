@@ -25,7 +25,7 @@ function Main({}: Props) {
           <strong>Frontend</strong> <br />
           <span style={{ color: "#ad49e1" }}>Developer</span>
         </h1>
-        <h2 className={styles.subtituloMain}>Desarrollador web y software</h2>
+        <h2 className={styles.subtituloMain}>{t("developer")}</h2>
         <div className={styles.espacioLenguajes}>
           <div className={styles.lenguajes}>React</div>
           <div className={styles.lenguajes}>NodeJs</div>
@@ -41,11 +41,17 @@ function Main({}: Props) {
                 {t("projects")}
               </button>
             </a>
-
-            <button className={styles.botonesProfile}>
-              <FaGithub className={styles.iconosButton} />
-              Github
-            </button>
+            <a
+              href="https://github.com/Git-Mopch"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
+              {" "}
+              <button className={styles.botonesProfile}>
+                <FaGithub className={styles.iconosButton} />
+                Github
+              </button>
+            </a>
           </div>
         </center>
       </div>

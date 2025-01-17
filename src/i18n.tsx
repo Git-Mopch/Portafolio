@@ -6,7 +6,7 @@ i18n.use(initReactI18next).init({
     en: {
       translation: {
         projects: "View Projects",
-
+        developer: "Web and Software developer",
         available: "Available",
 
         estudios1: "Web Application Development",
@@ -71,13 +71,37 @@ i18n.use(initReactI18next).init({
         sobreMi: "About Me",
         portafolio: "Portafolio",
         contacto: "Contact",
+
+        textoLaroye:
+          "Laroye Café offers a unique experience in a youthful and welcoming environment for all audiences. With a menu of handcrafted products created by culinary experts, this café stands out for its dedication to quality and service. Additionally, it features special promotions and an ideal space to share with family and friends. Come and enjoy a place where every day they strive to exceed your expectations and where your loyalty is rewarded.",
+        textoLivecan:
+          "At LiveCan, we are passionate about improving the lives of dogs and their owners. That's why we design high-quality chew toys, made with safe and durable materials, perfect for keeping your dog entertained while taking care of their dental health. Our products are designed to meet the needs of different breeds and sizes, ensuring fun and well-being. Discover how our chew toys can strengthen the bond with your four-legged best friend, providing hours of play and satisfaction. 🐶✨",
+
+        funcionalidad1Livecan:
+          "Integrated Shopping Cart: Users can easily add products to their cart and proceed to checkout seamlessly.",
+        funcionalidad2Livecan:
+          "Responsive Design: The website adapts effectively to different screen sizes, providing an optimal user experience on mobile and desktop devices.",
+        funcionalidad3Livecan:
+          "Secure Payment System: It offers multiple payment options and secure transactions to ensure customer data protection.",
+
+        funcionalidad: "Functionality",
+        lenguajes: "Languages",
+        proyectos: "Projects",
+        volverInicio: "Go Back",
+
+        funcionalidad1Laroye:
+          "Responsive Web Design: Adapts to various devices and screen sizes, ensuring a smooth experience on both mobile and desktop.",
+        funcionalidad2Laroye:
+          "Interactive Contact Form: Allows users to make reservations or request information quickly.",
+        funcionalidad3Laroye:
+          "Social Media Integration System: Enables direct interaction with platforms like Instagram and Facebook, enhancing customer communication.",
       },
     },
     es: {
       translation: {
         projects: "Ver Proyectos",
         available: "Disponible",
-
+        developer: "Desarrollador web y software",
         estudios1: "Desarrollo de aplicaciones Web",
         estudios2: "Practicas Empresa",
         estudios3: "Desarrollo de aplicaciones Multiplataforma",
@@ -137,6 +161,30 @@ i18n.use(initReactI18next).init({
         sobreMi: "Sobre Mi",
         portafolio: "Portafolio",
         contacto: "Contacto",
+
+        textoLivecan:
+          "En LiveCan nos apasiona mejorar la vida de los perros y sus dueños. Por eso diseñamos mordedores de alta calidad, fabricados con materiales seguros y duraderos, ideales para mantener a tu perro entretenido mientras cuidas su salud dental. Nuestros productos están pensados para adaptarse a las necesidades de diferentes razas y tamaños, asegurando diversión y bienestar. Descubre cómo nuestros mordedores pueden fortalecer el vínculo con tu mejor amigo de cuatro patas, ofreciéndole horas de juego y satisfacción. 🐶✨",
+        textoLaroye:
+          "Laroye Café ofrece una experiencia única en un ambiente joven y agradable para todos los públicos. Con una carta de productos artesanales elaborados por expertos en gastronomía, este café se distingue por su dedicación a la calidad y el servicio. Además, cuenta con promociones especiales y un espacio ideal para compartir con familiares y amigos. Ven a disfrutar de un lugar donde cada día mejoran para superar tus expectativas y donde tu fidelidad es recompensada.",
+
+        funcionalidad1Livecan:
+          "Carrito de Compras Integrado: Los usuarios pueden agregar productos a su carrito y proceder a la compra de manera sencilla.",
+        funcionalidad2Livecan:
+          "Responsive Design: La web se adapta correctamente a diferentes tamaños de pantalla, proporcionando una experiencia de usuario óptima en móviles y dispositivos de escritorio.",
+        funcionalidad3Livecan:
+          "Sistema de Pagos Seguro: Ofrece múltiples opciones de pago y seguridad en las transacciones para garantizar la protección de los datos del cliente.",
+
+        funcionalidad: "Funcionalidad",
+        lenguajes: "Lenguajes",
+        proyectos: "Proyectos",
+        volverInicio: "Volver incio",
+
+        funcionalidad1Laroye:
+          "Diseño Web Responsivo: Se adapta a diferentes dispositivos y tamaños de pantalla, asegurando una experiencia fluida tanto en móviles como en escritorio.",
+        funcionalidad2Laroye:
+          "Formulario de Contacto Interactivo: Permite a los usuarios hacer reservas o consultar información rápidamente.",
+        funcionalidad3Laroye:
+          "Sistema de Integración con Redes Sociales: Facilita la interacción directa con plataformas como Instagram y Facebook, mejorando la comunicación con los clientes.",
       },
     },
   },

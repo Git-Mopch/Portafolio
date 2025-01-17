@@ -9,6 +9,7 @@ import { FaLaptopCode } from "react-icons/fa6";
 import { IoGitNetwork } from "react-icons/io5";
 import { useTranslation } from "react-i18next"; // Importar hook de i18next
 
+import cvMiguel from "../../CV-Miguel.pdf";
 type Props = {};
 
 function SobreMi({}: Props) {
@@ -32,13 +33,16 @@ function SobreMi({}: Props) {
           </h2>
           <p className={styles.descripcionPersonal}>{t("textoSobreMi")}</p>
           <center>
-            <button className={styles.botonCV}>
-              <PiReadCvLogoFill
-                size={20}
-                style={{ marginBottom: 5, marginRight: 6 }}
-              />
-              {t("botonCv")}
-            </button>
+            <a href={cvMiguel} target="_blank">
+              {" "}
+              <button className={styles.botonCV}>
+                <PiReadCvLogoFill
+                  size={20}
+                  style={{ marginBottom: 5, marginRight: 6 }}
+                />
+                {t("botonCv")}
+              </button>
+            </a>
           </center>
         </div>
         <div className={styles.infoSons}>

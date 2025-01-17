@@ -6,10 +6,11 @@ import { FaWordpress } from "react-icons/fa";
 import { SiPhp } from "react-icons/si";
 import { SiPhpmyadmin } from "react-icons/si";
 import { IoLogoCss3 } from "react-icons/io";
-
+import { useTranslation } from "react-i18next"; // Importar hook
 type Props = {};
 
 function laroye({}: Props) {
+  const { t } = useTranslation();
   const iconoWordpress = <FaWordpress size={50} color="white" />;
   const iconoPhp = <SiPhp size={50} color="white" />;
   const iconoPhpAdmin = <SiPhpmyadmin size={50} color="white" />;
@@ -25,17 +26,11 @@ function laroye({}: Props) {
         icono3={iconoPhpAdmin}
         icono4={iconoCss}
         imgProyect={imagenLaroye}
-        funcionalidad1="Diseño Web Responsivo: Se adapta a diferentes dispositivos y tamaños de pantalla, asegurando una experiencia fluida tanto en móviles como en escritorio."
-        funcionalidad2="Formulario de Contacto Interactivo: Permite a los usuarios hacer reservas o consultar información rápidamente."
-        funcionalidad3="Sistema de Integración con Redes Sociales: Facilita la interacción directa con plataformas como Instagram y Facebook, mejorando la comunicación con los clientes."
+        funcionalidad1={t("funcionalidad1Laroye")}
+        funcionalidad2={t("funcionalidad2Laroye")}
+        funcionalidad3={t("funcionalidad3Laroye")}
       >
-        Laroye Café ofrece una experiencia única en un ambiente joven y
-        agradable para todos los públicos. Con una carta de productos
-        artesanales elaborados por expertos en gastronomía, este café se
-        distingue por su dedicación a la calidad y el servicio. Además, cuenta
-        con promociones especiales y un espacio ideal para compartir con
-        familiares y amigos. Ven a disfrutar de un lugar donde cada día mejoran
-        para superar tus expectativas y donde tu fidelidad es recompensada.
+        {t("textoLaroye")}
       </PaginaProyectos>
     </div>
   );
