@@ -4,10 +4,11 @@ import { IoOpen } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { TiPuzzle } from "react-icons/ti";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom"; // Importar Link correctamente
 import { useTranslation } from "react-i18next"; // Importar hook
 
 import styles from "./PaginaProyectos.module.css";
+
 type Props = {
   nombreProyecto: String;
   children?: React.ReactNode;
@@ -49,8 +50,7 @@ const PaginaProyectos = (props: Props) => {
           <p className={styles.textoProyecto}>{props.children}</p>
 
           <div>
-            <a href={props.UrlWeb} target="_blank">
-              {" "}
+            <a href={props.UrlWeb} target="_blank" rel="noopener noreferrer">
               <button className={styles.botonProyectos}>
                 <IoOpen className={styles.iconosSettings} />
                 Ver Proyecto
@@ -83,7 +83,7 @@ const PaginaProyectos = (props: Props) => {
                 <div className={styles.iconosLenguajesProyecto}>
                   {props.icono3}
                 </div>
-              )}{" "}
+              )}
               {props.icono4 && (
                 <div className={styles.iconosLenguajesProyecto}>
                   {props.icono4}
@@ -94,7 +94,12 @@ const PaginaProyectos = (props: Props) => {
         </div>
         <div className={styles.boxInnerMain}>
           <div>
-            <a href={props.imgProyect} target="_blank" draggable="false">
+            <a
+              href={props.imgProyect}
+              target="_blank"
+              draggable="false"
+              rel="noopener noreferrer"
+            >
               <img
                 className={styles.imagenProyecto}
                 draggable="false"
@@ -107,7 +112,6 @@ const PaginaProyectos = (props: Props) => {
             </a>
           </div>
           <div className={styles.mainFuncionalidad}>
-            {" "}
             <h2 className={styles.FuncionalidadProyecto}>
               <TiPuzzle size={40} style={{ marginBottom: 12 }} />
               {t("funcionalidad")}
@@ -118,7 +122,7 @@ const PaginaProyectos = (props: Props) => {
               )}
               {props.funcionalidad2 && (
                 <li className={styles.ListItems}>{props.funcionalidad2}</li>
-              )}{" "}
+              )}
               {props.funcionalidad3 && (
                 <li className={styles.ListItems}>{props.funcionalidad3}</li>
               )}
@@ -129,4 +133,5 @@ const PaginaProyectos = (props: Props) => {
     </div>
   );
 };
+
 export default PaginaProyectos;

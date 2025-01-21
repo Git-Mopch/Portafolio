@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./SobreMi.module.css";
 import { PiReadCvLogoFill } from "react-icons/pi";
 import imgUser from "../../img/fotoUser.png";

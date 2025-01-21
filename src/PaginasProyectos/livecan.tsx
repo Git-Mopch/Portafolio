@@ -1,4 +1,3 @@
-import React from "react";
 import PaginaProyectos from "../Components/PaginaProyectos";
 import imagenLivecan from "../img/LivecanProyectImage.png";
 import { FaWordpress } from "react-icons/fa";

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Main.module.css";
 import { FcApproval } from "react-icons/fc";
 import { MdOpenInNew } from "react-icons/md";
@@ -8,8 +7,6 @@ import { FaCode } from "react-icons/fa6";
 import { useTranslation } from "react-i18next"; // Importar hook de i18next
 
 type Props = {};
-
-const textoProfesion = "<Web Developer/>";
 
 function Main({}: Props) {
   const { t } = useTranslation(); // Usar el hook de i18next

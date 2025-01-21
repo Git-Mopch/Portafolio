@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import styles from "./styleHeader.module.css";
 import { useTranslation } from "react-i18next"; // Importar hook de i18next
 type Props = {};

@@ -1,9 +1,5 @@
-import React from "react";
 import styles from "./Estudios.module.css";
-import { FaDownload, FaCloudDownloadAlt } from "react-icons/fa";
-import curriculum from "../../CV-Miguel.pdf";
-import cursoKotlin from "../../Curso-Kotlin-Certificado.jpg";
-import cursoBootcampWeb from "../../CertificadoCursoWeb.png";
+
 import { useTranslation } from "react-i18next"; // Importar hook de i18next
 
 type Props = {};

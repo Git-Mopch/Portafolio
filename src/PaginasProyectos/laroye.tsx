@@ -1,6 +1,4 @@
-import React from "react";
 import PaginaProyectos from "../Components/PaginaProyectos";
-import { FaGithub } from "react-icons/fa";
 import imagenLaroye from "../img/LaroyeProyectImage.png";
 import { FaWordpress } from "react-icons/fa";
 import { SiPhp } from "react-icons/si";

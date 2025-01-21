@@ -1,4 +1,3 @@
-import React from "react";
 import { MdOpenInNew } from "react-icons/md";
 import { IconType } from "react-icons";
 
