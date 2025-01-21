@@ -223,8 +223,8 @@
     justify-content: center;
     align-items: center;
     height: auto;
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 10px;
+    padding: 10px;
   }
 
   .mainBoxes {
@@ -233,7 +233,7 @@
   }
 
   .tituloMain {
-    font-size: 70px;
+    font-size: 50px;
     margin: 0;
     padding: 10px 0;
   }
@@ -249,7 +249,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 15%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 14px;
@@ -258,7 +258,7 @@
   }
 
   .iconDevelop {
-    font-size: 300px;
+    font-size: 200px;
     margin: 20px 0;
   }
 

@@ -70,7 +70,7 @@ i18n.use(initReactI18next).init({
         inicio: "Home",
         sobreMi: "About Me",
         portafolio: "Portafolio",
-        contacto: "Contact",
+        Contacto: "Contact",
 
         textoLaroye:
           "Laroye Café offers a unique experience in a youthful and welcoming environment for all audiences. With a menu of handcrafted products created by culinary experts, this café stands out for its dedication to quality and service. Additionally, it features special promotions and an ideal space to share with family and friends. Come and enjoy a place where every day they strive to exceed your expectations and where your loyalty is rewarded.",
@@ -152,7 +152,7 @@ i18n.use(initReactI18next).init({
         formNombre: "Nombre:",
         formMail: "Correo:",
         formTextoMensaje: "Mensaje:",
-        formBtnTexto: "Eviar",
+        formBtnTexto: "Enviar",
 
         toastexito: "Enviado con éxito",
         toastError: "Hubo un problema enviando el correo: ",
@@ -160,7 +160,7 @@ i18n.use(initReactI18next).init({
         inicio: "Inicio",
         sobreMi: "Sobre Mi",
         portafolio: "Portafolio",
-        contacto: "Contacto",
+        Contacto: "Contacto",
 
         textoLivecan:
           "En LiveCan nos apasiona mejorar la vida de los perros y sus dueños. Por eso diseñamos mordedores de alta calidad, fabricados con materiales seguros y duraderos, ideales para mantener a tu perro entretenido mientras cuidas su salud dental. Nuestros productos están pensados para adaptarse a las necesidades de diferentes razas y tamaños, asegurando diversión y bienestar. Descubre cómo nuestros mordedores pueden fortalecer el vínculo con tu mejor amigo de cuatro patas, ofreciéndole horas de juego y satisfacción. 🐶✨",

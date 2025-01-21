@@ -15,13 +15,17 @@
   margin: 100px auto;
   padding: 20px;
 }
+
 .labels {
   color: aliceblue;
   font-family: "Open Sans", serif;
+  text-align: left; /* Alinea el texto a la izquierda */
+  display: block; /* Asegura que cada label ocupe una línea completa */
+  margin-bottom: 5px; /* Espacio entre el label y el input */
 }
+
 .espacioForm {
   width: 100%;
-  text-align: center;
 }
 
 .formulario {
@@ -33,6 +37,7 @@
 .tituloSobreMi {
   font-size: 46px;
   width: 100%;
+  text-align: center;
   color: aliceblue;
 }
 
@@ -49,6 +54,7 @@
   border-radius: 15px;
   border: 2px solid rgba(0, 0, 0, 0.418);
   font-family: "Open Sans", serif;
+  margin-bottom: 15px;
 }
 
 .estiloBoton {

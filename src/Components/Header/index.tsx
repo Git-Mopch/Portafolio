@@ -80,7 +80,7 @@ function Header({}: Props) {
               className={activeLink === "#formulario" ? styles.active : ""}
               onClick={() => setActiveLink("#formulario")}
             >
-              {t("contacto ")}
+              {t("Contacto")}
             </a>
           </li>
         </ul>
