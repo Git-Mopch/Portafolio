@@ -120,10 +120,10 @@
 @media screen and (max-width: 430px) {
   .tituloSobreMi {
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     font-family: "Poppins", serif;
     color: #ad49e1;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
   .mainBtn {
     display: grid;
