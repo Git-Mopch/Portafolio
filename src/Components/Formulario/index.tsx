@@ -3,7 +3,8 @@ import emailjs from "emailjs-com";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 import style from "./Formulario.module.css";
-import { useTranslation } from "react-i18next"; // Importar hook de i18next
+import { useTranslation } from "react-i18next";
+
 // Definimos el tipo de datos del formulario
 interface FormData {
   name: string;
@@ -18,6 +19,7 @@ const Formulario = () => {
   const {
     register, // Para registrar los inputs
     handleSubmit, // Para manejar el envío del formulario
+    reset, // Para limpiar el formulario
     formState: { errors }, // Para gestionar errores
   } = useForm<FormData>();
 
@@ -42,6 +44,7 @@ const Formulario = () => {
               background: "linear-gradient(to right, #00b09b, #96c93d)",
             },
           }).showToast();
+          reset(); // Limpiar el formulario al enviarse correctamente
         },
         (error) => {
           Toastify({
