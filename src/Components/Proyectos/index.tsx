@@ -26,6 +26,7 @@ export default function Proyectos({
   return (
     <div className={"card " + stylesC.cardSetting}>
       <img
+        className={stylesC.imagenCard}
         src={
           imgFondo ||
           "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"

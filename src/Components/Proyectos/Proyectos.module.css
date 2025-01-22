@@ -2,9 +2,7 @@
   width: 100%;
   height: auto;
   border-radius: 10px;
-  background-color: #f8f9fa;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 10px;
 }
 
 .cardSetting {
@@ -42,4 +40,13 @@
 }
 .verProyectoSettings {
   text-decoration: none;
+}
+
+@media screen and (max-width: 430px) {
+  .cardSetting {
+    width: 330px;
+  }
+  .imagenCard {
+    border-radius: 20px;
+  }
 }

@@ -28,8 +28,20 @@ console.log(`
                          | $$                                                      
                          | $$                                                      
                           \\$$      
-(¿Que he usado?)
-- i18n -- Traducciones
+
+(¿Que herramientas he usado?)
+
+- i18n (https://www.i18next.com/) -- Traducciones
+- Boostrap (https://getbootstrap.com/) -- Diseños
+- React-icons (https://react-icons.github.io/react-icons/) -- Iconos
+- React Hook Form (https://www.react-hook-form.com/) -- Formulario
+- EmailJs (https://www.emailjs.com/) -- Servidor Smtp gratis
+
+(¿Que lenguajes he usado?)
+
+- React
+- Typescript
+- Css
  `);
 function App() {
   const { i18n } = useTranslation();

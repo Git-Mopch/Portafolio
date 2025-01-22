@@ -211,6 +211,7 @@
     width: 150px;
     height: 60px;
     font-size: 15px;
+    display: none;
   }
   .espacioBotones {
     margin-left: 65px;
