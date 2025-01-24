@@ -1,6 +1,6 @@
 import styles from "./SobreMi.module.css";
 import { PiReadCvLogoFill } from "react-icons/pi";
-import imgUser from "../../img/fotoUser.png";
+import imgUser from "../../img/fotoUser.jpg";
 import PersonalInfo from "../PersonalInfo";
 import { IoTimerSharp } from "react-icons/io5";
 
