@@ -108,7 +108,7 @@ i18n.use(initReactI18next).init({
         tituloEstudios: "Experiencia",
         subtitulosEstudios: '"Los grandes cambios requieren grandes esfuerzos"',
         estudios1texto:
-          "Gracias a este grado he podido dominar lenguajes tan utiles para el dia a dia como desarrollador web entre ellos: Html, Css, JavaScript, NodeJs, Sql, PhpMyAdmin, Wordpress.",
+          "Gracias a este grado he podido dominar lenguajes tan útiles para el dia a dia como desarrollador web entre ellos: Html, Css, JavaScript, NodeJs, Sql, PhpMyAdmin, Wordpress.",
         estudios2texto:
           "Durante mis prácticas en Pulsap, adquirí experiencia en maquetación con WordPress, desarrollo de plugins personalizados en PHP y resolución de problemas en las webs de nuestros clientes. Además, fortalecí mis habilidades de atención al cliente al contactar directamente con ellos para ofrecer soluciones eficientes y personalizadas.",
         estudios3texto:
