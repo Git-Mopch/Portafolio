@@ -1,28 +1,15 @@
-import "./App.css";
-import imgPensador from "./img/ImagenesPixeladas/imgPensador.svg";
+import style from "./App.module.css";
 
+import FooterWinStyle from "./components/footer/FooterWinStyle";
 function App() {
   return (
     <>
-      <center>
-        <section className="mainTitle">
-          {`
-██████   ██████                             █████         ██████████                          
-▒▒██████ ██████                             ▒▒███         ▒▒███▒▒▒▒███                        
- ▒███▒█████▒███   ██████  ████████   ██████  ▒███████      ▒███   ▒▒███  ██████  █████ █████   
- ▒███▒▒███ ▒███  ███▒▒███▒▒███▒▒███ ███▒▒███ ▒███▒▒███     ▒███    ▒███ ███▒▒███▒▒███ ▒▒███    
- ▒███ ▒▒▒  ▒███ ▒███ ▒███ ▒███ ▒███▒███ ▒▒▒  ▒███ ▒███     ▒███    ▒███▒███████  ▒███  ▒███    
- ▒███      ▒███ ▒███ ▒███ ▒███ ▒███▒███  ███ ▒███ ▒███     ▒███    ███ ▒███▒▒▒   ▒▒███ ███     
- █████     █████▒▒██████  ▒███████ ▒▒██████  ████ █████    ██████████  ▒▒██████   ▒▒█████    ██
-▒▒▒▒▒     ▒▒▒▒▒  ▒▒▒▒▒▒   ▒███▒▒▒   ▒▒▒▒▒▒  ▒▒▒▒ ▒▒▒▒▒    ▒▒▒▒▒▒▒▒▒▒    ▒▒▒▒▒▒     ▒▒▒▒▒    ▒▒ 
-                          ▒███                                                                 
-                          █████                                                                
-                         ▒▒▒▒▒                                                                
-`}
+      <main className={style.mainSection}>
+        <div></div>
+        <section>
+          <FooterWinStyle />
         </section>
-
-        <img src={imgPensador} alt="" />
-      </center>
+      </main>
     </>
   );
 }

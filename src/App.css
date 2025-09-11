@@ -1,9 +1,0 @@
-.mainTitle {
-  font-family: monospace;
-  white-space: pre;
-  font-size: 12px;
-  line-height: 1.1;
-  color: rgb(209, 200, 200); /* Cambia el color si quieres */
-  padding: 10px;
-  overflow-x: auto; /* Para pantallas pequeñas */
-}

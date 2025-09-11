@@ -1,0 +1,122 @@
+.MainBar {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+}
+.mainContent {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  background-color: #bfc7c9;
+}
+.mainContent hr {
+  width: 2px;
+  margin: 3px;
+}
+.buttonWin {
+  width: 90px;
+  background-color: #00000000;
+  border: 0px;
+  position: relative;
+  bottom: 2px;
+  margin: 5px;
+  background-image: url("../../img/ImagenesPixeladas/btnWin98.png");
+  background-size: cover;
+}
+.buttonWin:hover {
+  cursor: pointer;
+}
+.iconBarMain {
+  position: relative;
+  bottom: 5px;
+}
+.secondarySpace {
+  width: 75%;
+
+  height: 50px;
+}
+
+.activeWindowBar {
+  background-color: #dde0e1;
+  height: 40px;
+  width: 300px;
+  margin: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  border-radius: 5px;
+
+  /* 👇 transición suave */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.activeWindowBar:hover {
+  background-color: rgb(155, 155, 155);
+  cursor: pointer;
+}
+
+.activeWindowBar img {
+  float: left;
+}
+.activeWindowBar span {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: bold;
+  top: 25%;
+}
+.FinalSpace {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #c0c0c0;
+  padding: 5px 10px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+  font-family: "Tahoma", sans-serif;
+}
+
+.calendarBtn {
+  background-color: rgba(255, 222, 173, 0);
+  border: 0px;
+  padding: 3px 8px;
+  font-family: "Tahoma", sans-serif;
+  cursor: pointer;
+}
+
+.clock {
+  font-weight: bold;
+}
+
+.calendarPopup {
+  position: absolute;
+  bottom: 60px; /* justo encima del footer */
+  right: 20px;
+  background: #dfdfdf;
+  border: 2px solid #808080;
+  padding: 5px;
+  box-shadow: 2px 2px 0px #000;
+  z-index: 1000;
+}
+
+/* 🎨 Estética retro Win98 */
+.calendarPopup .react-calendar {
+  background: #c0c0c0;
+  border: 2px solid #808080;
+  font-family: "Tahoma", sans-serif;
+}
+
+.calendarPopup .react-calendar__tile {
+  border: 1px solid transparent;
+}
+
+.calendarPopup .react-calendar__tile:enabled:hover {
+  background: #000080;
+  color: white;
+}
+
+.calendarPopup .react-calendar__tile--active {
+  background: #000080 !important;
+  color: white !important;
+}
