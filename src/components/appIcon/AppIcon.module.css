@@ -1,0 +1,35 @@
+.mainSpace {
+  width: 100px;
+  height: 130px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none; /* Quita subrayado del <a> */
+  cursor: pointer;
+  display: inline-block;
+  user-select: none;
+  transition: transform 0.1s ease-in-out;
+}
+.mainIcon {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background-color: #000000;
+  background-size: cover; /* ✅ hace que cubra todo */
+  background-position: center; /* ✅ centra la imagen */
+  background-repeat: no-repeat; /* ✅ evita mosaico */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #808080;
+  box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px #808080;
+  overflow: hidden;
+}
+
+.appName {
+  margin: 0;
+  padding-top: 8px;
+  font-family: "Tahoma", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: rgb(244, 240, 240);
+}

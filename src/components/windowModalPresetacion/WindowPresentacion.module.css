@@ -1,0 +1,43 @@
+.mainWindow {
+  position: absolute;
+  margin-top: -60px;
+  margin-left: 25%;
+  width: auto;
+  border: 2px solid #000;
+  background-color: #c3c7cb;
+  box-shadow: 4px 4px #888;
+  font-family: Arial, sans-serif;
+  user-select: none;
+  display: block;
+}
+
+.botonx {
+  text-align: center;
+  background-color: #e1e4e8;
+  color: #000;
+  font-weight: bold;
+  border: 2px solid #000;
+  width: 20px;
+  height: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.botonx:hover {
+  background-color: #686a6c;
+}
+.iconWindow {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+.textMainHeader {
+  position: relative;
+  margin-top: 7px;
+  right: 34%;
+}
+.imgGif {
+  border-radius: 20px;
+}
+.espacioContenido p {
+  max-width: 500px;
+  margin: 10px;
+}

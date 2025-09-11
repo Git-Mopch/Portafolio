@@ -9,9 +9,12 @@ import iconGithub from "../../img/ImagenesPixeladas/GithubIcon.png";
 import iconFace from "../../img/ImagenesPixeladas/iconFace.png";
 import iconCaledar from "../../img/ImagenesPixeladas/iconCalendar.png";
 
-type Props = {};
+type Props = {
+  showPresentacionIcon: boolean;
+  onOpenPresentacion: () => void;
+};
 
-function FooterWinStyle({}: Props) {
+function FooterWinStyle({ showPresentacionIcon, onOpenPresentacion }: Props) {
   const [time, setTime] = useState<string>("");
   const [showCalendar, setShowCalendar] = useState<boolean>(false);
   const [date, setDate] = useState<Date>(new Date());
@@ -21,17 +24,13 @@ function FooterWinStyle({}: Props) {
 
   // Actualizar hora en tiempo real
   useEffect(() => {
-    const updateTime = () => {
-      const now = new Date();
-      setTime(now.toLocaleTimeString());
-    };
-
+    const updateTime = () => setTime(new Date().toLocaleTimeString());
     updateTime();
     const interval = setInterval(updateTime, 1000);
     return () => clearInterval(interval);
   }, []);
 
-  // Cerrar calendario si haces clic fuera
+  // Cerrar calendario si clic fuera
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (
@@ -44,15 +43,11 @@ function FooterWinStyle({}: Props) {
       }
     }
 
-    if (showCalendar) {
+    if (showCalendar)
       document.addEventListener("mousedown", handleClickOutside);
-    } else {
-      document.removeEventListener("mousedown", handleClickOutside);
-    }
+    else document.removeEventListener("mousedown", handleClickOutside);
 
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [showCalendar]);
 
   return (
@@ -71,14 +66,18 @@ function FooterWinStyle({}: Props) {
         </a>
         <hr />
         <div className={style.secondarySpace}>
-          <section className={style.activeWindowBar}>
-            <img src={iconFace} alt="Presentación" width={40} />
-            <span>Presentación</span>
-          </section>
+          {showPresentacionIcon && ( // <-- controlamos display del icono
+            <section
+              className={style.activeWindowBar}
+              onClick={onOpenPresentacion}
+              style={{ cursor: "pointer" }}
+            >
+              <img src={iconFace} alt="Presentación" width={40} />
+              <span>Presentación</span>
+            </section>
+          )}
         </div>
         <hr />
-
-        {/* Barra inferior */}
         <div className={style.FinalSpace}>
           <button
             ref={buttonRef}
@@ -89,14 +88,10 @@ function FooterWinStyle({}: Props) {
           </button>
           <span className={style.clock}>{time}</span>
         </div>
-
-        {/* Calendario flotante */}
         {showCalendar && (
           <div ref={calendarRef} className={style.calendarPopup}>
             <Calendar
-              onChange={(value) => {
-                if (value instanceof Date) setDate(value);
-              }}
+              onChange={(value) => value instanceof Date && setDate(value)}
               value={date}
             />
           </div>

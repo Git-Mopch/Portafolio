@@ -3,3 +3,10 @@
   height: 910px;
   background-color: rgb(40, 40, 39);
 }
+.mainAppsSpace {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  justify-content: start;
+  padding: 10px;
+}
