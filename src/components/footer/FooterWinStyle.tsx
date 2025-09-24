@@ -66,7 +66,7 @@ function FooterWinStyle({ showPresentacionIcon, onOpenPresentacion }: Props) {
         </a>
         <hr />
         <div className={style.secondarySpace}>
-          {showPresentacionIcon && ( // <-- controlamos display del icono
+          {showPresentacionIcon && (
             <section
               className={style.activeWindowBar}
               onClick={onOpenPresentacion}

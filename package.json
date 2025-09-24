@@ -10,9 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "geist": "^1.5.1",
+    "gsap": "^3.13.0",
+    "motion": "^12.23.21",
+    "ogl": "^1.0.11",
     "react": "^18.2.0",
     "react-calendar": "^6.0.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.9.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import style from "./AppIcon.module.css";
 
 type Props = {
@@ -8,18 +9,13 @@ type Props = {
 
 function AppIcon({ name, imgSrc, link }: Props) {
   return (
-    <a
-      href={link}
-      className={style.mainSpace}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <Link to={link} className={style.mainSpace}>
       <div
         className={style.mainIcon}
-        style={{ backgroundImage: `url(${imgSrc})` }} // ✅ corregido
+        style={{ backgroundImage: `url(${imgSrc})` }}
       ></div>
       <p className={style.appName}>{name}</p>
-    </a>
+    </Link>
   );
 }
 
