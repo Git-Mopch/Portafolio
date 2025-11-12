@@ -10,3 +10,13 @@
 html {
   scrollbar-width: none; /* Oculta */
 }
+h1 {
+  font-family: "Momo Trust Display";
+}
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: "Stack Sans Headline";
+}
