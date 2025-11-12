@@ -1,11 +1,9 @@
 .mainSectionHome {
   width: 100%;
   height: 100vh;
-  /* gradiente que termina en un color difuminado para el siguiente div */
-  background: linear-gradient(145deg, #1c1c1c, #0f0f0f 90%, #0f0f0f 100%);
+  background: linear-gradient(145deg, #1c1c1c, #0f0f0f);
   display: flex;
 }
-
 .mainTitleSpace {
   width: 800px;
   height: 300px;
@@ -20,13 +18,13 @@
   display: flex;
 }
 .section1Space p {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   width: 50px;
   text-align: center;
   padding: 10px;
   border-radius: 20px;
   height: 20px;
-  background: linear-gradient(135deg, #1a3d2f, #2e6b4f);
+  background-color: #ffffff;
 }
 .section2Space {
   color: #ffffff;
@@ -41,6 +39,7 @@
   bottom: 20px; /* Distancia desde abajo */
   left: 50%;
   transform: translateX(-50%);
+  cursor: all-scroll;
   animation: bounce 2s infinite;
 }
 
@@ -69,4 +68,50 @@
 }
 .mainSchrollSpace p {
   margin-bottom: 5px;
+}
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .mainSectionHome {
+    display: flex;
+    width: 90.8% !important;
+    flex-direction: column; /* Coloca todo en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    height: 100vh; /* Ocupa toda la pantalla */
+    padding: 0 20px; /* Evita que pegue a los bordes */
+  }
+
+  .mainTitleSpace {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin: 0; /* Quita márgenes que rompen el centrado */
+    text-align: center; /* Centra el contenido del título */
+  }
+
+  .mainTitleSpace h1 {
+    font-size: 3rem; /* Ajusta tamaño de fuente */
+  }
+
+  .section1Space {
+    display: flex;
+    flex-direction: column; /* Apila los elementos */
+    align-items: center; /* Centra los elementos */
+    margin-top: 20px; /* Separación entre elementos */
+  }
+
+  .section1Space p {
+    width: auto; /* Ajusta ancho automáticamente */
+    padding: 10px 20px; /* Espaciado más cómodo */
+  }
+
+  .section2Space {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+
+  .mainSchrollSpace {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

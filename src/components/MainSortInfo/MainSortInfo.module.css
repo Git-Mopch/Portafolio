@@ -45,3 +45,93 @@ cite {
   font-style: normal;
   color: #cfcfcf;
 }
+
+/* Móviles */
+@media (max-width: 768px) {
+  .mainTextDesc {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .mainEspacio1Text h2 {
+    font-size: 2rem;
+  }
+
+  .mainEspacio1Text h3 {
+    font-size: 1rem;
+  }
+
+  .mainEspacio1Text p {
+    font-size: 0.9rem;
+  }
+
+  blockquote {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  cite {
+    font-size: 0.8rem;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .mainTextDesc {
+    display: none;
+  }
+  .mainTextDesc {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .mainEspacio1Text h2 {
+    font-size: 2rem;
+  }
+
+  .mainEspacio1Text h3 {
+    font-size: 1rem;
+  }
+
+  .mainEspacio1Text p {
+    font-size: 0.9rem;
+  }
+
+  blockquote {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  cite {
+    font-size: 0.8rem;
+  }
+}
+
+/* Pantallas muy pequeñas / XS */
+@media (max-width: 480px) {
+  .mainTextDesc {
+    display: none;
+  }
+  .mainEspacio1Text h2 {
+    font-size: 1.6rem;
+  }
+
+  .mainEspacio1Text h3 {
+    font-size: 0.9rem;
+  }
+
+  .mainEspacio1Text p {
+    font-size: 0.85rem;
+  }
+
+  blockquote {
+    font-size: 0.8rem;
+    padding: 12px;
+  }
+
+  cite {
+    font-size: 0.7rem;
+  }
+}

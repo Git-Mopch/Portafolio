@@ -465,3 +465,155 @@
   box-shadow: 0 4px 16px rgba(0, 255, 34, 0.3);
   transform: translateY(-2px);
 }
+@media (max-width: 768px) {
+  .MainSect1 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainSpan {
+    text-align: left !important;
+  }
+  .mainSpaceImg {
+    width: 80%;
+    margin: 20px 0;
+    float: none;
+  }
+
+  .espacioImg {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 20px auto;
+  }
+
+  .mainSpaceIntroduction {
+    width: 90%;
+    text-align: center;
+  }
+
+  .mainSpaceIntroduction h2 {
+    font-size: 5rem !important;
+    left: 0;
+  }
+
+  .mainSpaceIntroduction p {
+    font-size: 1rem !important;
+    width: 100%;
+    left: 0;
+  }
+
+  .parent {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .div1,
+  .div2,
+  .div3,
+  .div4,
+  .div5 {
+    grid-area: unset;
+  }
+
+  .mainConocimientosIcons {
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .mainConocimientosIcons svg {
+    font-size: 28px;
+  }
+
+  .timeline {
+    margin-left: 10px;
+    padding-left: 15px;
+  }
+
+  .timelineDot {
+    left: -7px;
+  }
+
+  .timelineContent h3 {
+    font-size: 1rem;
+  }
+
+  .timelineContent p,
+  .date {
+    font-size: 0.8rem;
+  }
+
+  .mainMisProyectos h2 {
+    font-size: 2rem;
+    padding: 15px 25px;
+    margin-bottom: 30px;
+  }
+
+  .proyectosGrid {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+  }
+
+  .cardProyecto {
+    width: 90%;
+    height: 300px;
+  }
+
+  .mainContactame h2 {
+    font-size: 2.5rem;
+  }
+
+  .mainContactame {
+    width: 90% !important;
+  }
+  .contactForm {
+    width: 60% !important;
+    margin: 0 auto !important;
+  }
+  .inputField,
+  .textareaField,
+  .sendButton {
+    width: 100%;
+  }
+}
+
+/* Pantallas muy pequeñas / móviles XS */
+@media (max-width: 480px) {
+  .mainSpaceIntroduction h2 {
+    font-size: 3.5rem !important;
+  }
+
+  .mainSpaceIntroduction p {
+    font-size: 0.9rem !important;
+  }
+  .mainSpan {
+    text-align: left !important;
+  }
+  .timelineContent h3 {
+    font-size: 0.95rem;
+  }
+
+  .timelineContent p,
+  .date {
+    font-size: 0.75rem;
+  }
+
+  .mainMisProyectos h2 {
+    font-size: 1.8rem;
+    padding: 10px 20px;
+  }
+
+  .cardProyecto {
+    height: 250px;
+  }
+
+  .mainContactame h2 {
+    font-size: 2rem;
+  }
+
+  .sendButton {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+}
