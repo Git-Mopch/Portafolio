@@ -1,6 +1,6 @@
 .mainSobreMi {
   width: 100%;
-  height: 100vh;
+  height: auto;
   /* Gradiente difuminado para transición suave */
   background: linear-gradient(
       to top,
@@ -9,4 +9,282 @@
     ),
     /* difumina la parte superior */ linear-gradient(45deg, #0f0f0f, #1c1c1c); /* fondo principal */
   background-blend-mode: normal;
+}
+
+.parent {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px; /* 🔹 Espacio entre divs */
+  color: #e0e0e0;
+  width: 90%;
+  margin-top: 30px;
+  max-width: 1900px;
+  text-align: left;
+}
+
+/* Cajas */
+.div1 {
+  grid-area: 1 / 1 / 3 / 3;
+  background-color: #ffffff00;
+  border: 1px solid rgba(255, 255, 255, 0.435);
+}
+.div2 {
+  grid-area: 3 / 1 / 5 / 3;
+  background-color: #ffffff00;
+  border: 1px solid rgba(255, 255, 255, 0.435);
+}
+.div3 {
+  grid-area: 1 / 3 / 5 / 5;
+  background-color: #ffffff00;
+  border: 1px solid rgba(255, 255, 255, 0.435);
+}
+.div4 {
+  grid-area: 1 / 5 / 3 / 6;
+  background-color: #ffffff00;
+  border: 1px solid rgba(255, 255, 255, 0.435);
+}
+.div5 {
+  grid-area: 3 / 5 / 5 / 6;
+  background-color: #ffffff00;
+  border: 1px solid rgba(255, 255, 255, 0.435);
+}
+
+/* Estilo visual */
+.div1,
+.div2,
+.div3,
+.div4,
+.div5 {
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+.MainSect1 {
+  width: 100%;
+  height: 460px;
+}
+.mainSpaceImg {
+  width: 30%;
+  float: left;
+  height: 100%;
+}
+.mainSpaceImg img {
+  width: 400px;
+  border-radius: 30px;
+  height: 400px;
+  margin: 40px 40px 0px 80px;
+}
+.mainSpaceIntroduction {
+  width: 100%;
+  height: 100%;
+}
+.mainSpaceIntroduction h2 {
+  font-family: "Momo Trust Display" !important;
+  font-size: 10rem !important;
+  color: aliceblue;
+  position: relative;
+  left: 5%;
+}
+.mainSpaceIntroduction p {
+  font-size: 1.1rem !important;
+  color: aliceblue;
+  width: 1350px;
+  position: relative;
+  left: 5%;
+}
+.mainSpan {
+  background: linear-gradient(135deg, #1a3d2f, #2e6b4f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* para navegadores compatibles */
+  font-weight: bold;
+}
+
+.div1 h3 {
+  padding-bottom: 5px;
+  font-size: 2rem;
+}
+.div1 h4 {
+  padding-bottom: 5px;
+  font-size: 1.3rem;
+}
+.div1 p {
+  background: linear-gradient(135deg, #1a3d2f, #2e6b4f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* para navegadores compatibles */
+  font-weight: bold;
+}
+.div2 h3 {
+  padding-bottom: 5px;
+  font-size: 2rem;
+}
+
+.mainConocimientosIcons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+.mainConocimientosIcons div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainConocimientosIcons svg {
+  font-size: 35px;
+  color: #ffffff;
+  transition: transform 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+/* Hover efecto visual */
+.mainConocimientosIcons svg:hover {
+  transform: scale(1.2);
+  color: #5ecca0;
+}
+
+/* Tooltip */
+.mainConocimientosIcons div::after {
+  content: attr(data-name);
+  position: absolute;
+  font-family: "Momo Trust Display" !important;
+
+  bottom: -30px;
+  background-color: #1c1c1c;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 5px 10px;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform: translateY(5px);
+  white-space: nowrap;
+}
+
+/* Mostrar tooltip al hacer hover */
+.mainConocimientosIcons div:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+.div3 {
+  background-color: #202020;
+  border-radius: 10px;
+  padding: 30px;
+  color: #e0e0e0;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+/* Título */
+.div3 h2 {
+  padding-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  margin-left: 25px;
+  padding-left: 20px;
+  border-left: 2px solid #fff; /* Línea vertical */
+}
+
+/* Puntos */
+.timelineDot {
+  position: absolute;
+  left: -10px;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translateY(6px);
+}
+
+/* Cada bloque */
+.timelineItem {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+/* Contenido */
+.timelineContent {
+  margin-left: 20px;
+}
+
+.timelineContent h3 {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.timelineContent p {
+  color: #bfbfbf;
+  margin: 2px 0;
+  font-size: 0.95rem;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #a0a0a0;
+}
+.div4 h2 {
+  font-size: 2rem;
+}
+/* Lista */
+.div4 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.div4 li {
+  font-size: 0.8rem;
+  margin: 5px 0;
+  padding: 10px 15px;
+  border-left: 3px solid transparent;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover en cada habilidad */
+.div4 li:hover {
+  background: rgba(94, 204, 160, 0.1);
+  border-left: 3px solid #5ecca0;
+  transform: translateX(5px);
+}
+.div5 h2 {
+  font-size: 2rem;
+}
+/* Lista */
+.div5 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.div5 li {
+  font-size: 0.8rem;
+  margin: 5px 0;
+  padding: 10px 15px;
+  border-left: 3px solid transparent;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover en cada habilidad */
+.div5 li:hover {
+  background: rgba(94, 204, 160, 0.1);
+  border-left: 3px solid #5ecca0;
+  transform: translateX(5px);
 }
