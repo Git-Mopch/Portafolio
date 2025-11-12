@@ -1,0 +1,91 @@
+.popupoverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.8s ease forwards;
+  z-index: 999;
+}
+
+.popupcard {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 24px;
+  padding: 40px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  animation: scaleIn 0.6s ease forwards;
+}
+
+.popupcard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.popupcard p {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.popupicons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.popupicons a {
+  font-size: 1.8rem;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.popupicons a:hover {
+  color: #196144; /* Azul Apple */
+  transform: scale(1.15);
+}
+
+.popupcard button {
+  background: #1a3d2f;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.popupcard button:hover {
+  background: #36916c;
+  box-shadow: 0 4px 20px rgba(43, 255, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

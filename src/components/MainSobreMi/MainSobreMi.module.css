@@ -288,3 +288,177 @@
   border-left: 3px solid #5ecca0;
   transform: translateX(5px);
 }
+
+.mainMisProyectos {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.mainMisProyectos h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #1a3d2f;
+  padding: 20px 40px;
+  border-radius: 12px 6px 40px 6px;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+.proyectosGrid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+}
+
+.cardProyecto {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #111;
+  cursor: pointer;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.5s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.cardProyecto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+  transition: all 0.6s ease;
+}
+
+.cardProyecto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+}
+
+.cardProyecto:hover img {
+  filter: brightness(100%) saturate(110%);
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent 70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s ease;
+}
+
+.cardProyecto:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.overlay p {
+  color: #d6d6d6;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.mainContactame {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background-color: #1a3d2f;
+  color: #1d1d1f;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.mainContactame h2 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  transition: all 0.3s ease;
+}
+
+.contactContainer {
+  text-align: center;
+  width: 500px !important;
+}
+
+.contactContainer p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #9a9393;
+}
+
+.contactForm {
+  display: flex;
+  font-family: "Stack Sans Headline";
+
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.inputField,
+.textareaField {
+  font-family: "Stack Sans Headline";
+
+  padding: 15px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.inputField:focus,
+.textareaField:focus {
+  border-color: #0071e3;
+  box-shadow: 0 0 8px rgba(0, 113, 227, 0.2);
+  background: #fff;
+}
+
+.textareaField {
+  min-height: 120px;
+  resize: none;
+}
+
+.sendButton {
+  background: #076b28;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+.sendButton:hover {
+  background: #09b03e;
+  box-shadow: 0 4px 16px rgba(0, 255, 34, 0.3);
+  transform: translateY(-2px);
+}

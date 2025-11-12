@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./MainSobreMi.module.css";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
@@ -16,7 +15,27 @@ import { DiLinux } from "react-icons/di";
 import { FaGithubSquare } from "react-icons/fa";
 
 type Props = {};
-
+const proyectos = [
+  {
+    titulo: "SUN AND WATER",
+    descripcion: "Empresa dedicada a la energuía renovable",
+    imagen:
+      "https://www.enelgreenpower.com/content/dam/enel-egp/immagini/learning-hub/energia-eolica/Card_Module-learning-hub-parco-eolico.jpg.resize.560.740.center.center.jpeg",
+  },
+  {
+    titulo: "LIVECAN",
+    descripcion: "Pequeño negocio de venta de mordedores caseros para perros.",
+    imagen:
+      "https://moydog.com/wp-content/uploads/2022/12/Kong-CoreStrength-Ball-Pelota-Mordedora-Perros-scaled.jpg.webp",
+  },
+  {
+    titulo: "LAROYE CAFE",
+    descripcion:
+      "Cafetería con tapas caseras y ambiente de encuentro, orientado tanto a familias como a aficionados al fútbol.",
+    imagen:
+      "https://images.adsttc.com/media/images/5ca7/72d5/284d/d153/3000/01f3/newsletter/UC8A1834.jpg?1554477741",
+  },
+];
 export default function MainSobreMi({}: Props) {
   return (
     <div className={style.mainSobreMi}>
@@ -160,6 +179,48 @@ export default function MainSobreMi({}: Props) {
             <li>Español - Nativo</li>
             <li>Ingles - C1</li>
           </ul>
+        </div>
+      </div>
+      <div className={style.mainMisProyectos}>
+        <h2>Mis Trabajos</h2>
+
+        <div className={style.proyectosGrid}>
+          {proyectos.map((p, index) => (
+            <div key={index} className={style.cardProyecto}>
+              <img src={p.imagen} alt={p.titulo} />
+              <div className={style.overlay}>
+                <h3>{p.titulo}</h3>
+                <p>{p.descripcion}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className={style.mainContactame}>
+        <h2>CONTACTÁME</h2>
+
+        <div className={style.contactContainer}>
+          <p>¿Tienes un proyecto o una idea en mente?</p>
+
+          <form className={style.contactForm}>
+            <input
+              type="text"
+              placeholder="Tu nombre"
+              className={style.inputField}
+            />
+            <input
+              type="email"
+              placeholder="Tu correo"
+              className={style.inputField}
+            />
+            <textarea
+              placeholder="Escribe tu mensaje..."
+              className={style.textareaField}
+            ></textarea>
+            <button type="submit" className={style.sendButton}>
+              Enviar Mensaje
+            </button>
+          </form>
         </div>
       </div>
     </div>
