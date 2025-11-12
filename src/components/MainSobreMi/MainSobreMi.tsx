@@ -41,10 +41,7 @@ export default function MainSobreMi({}: Props) {
     <div className={style.mainSobreMi}>
       <div className={style.MainSect1}>
         <div className={style.mainSpaceImg}>
-          <img
-            src="https://i.pinimg.com/736x/e8/28/69/e82869a170f827c375b78905e2d410c6.jpg"
-            alt="Img Miguel Pomares"
-          />
+          <section className={style.espacioImg} />
         </div>
         <div className={style.mainSpaceIntroduction}>
           <h2>

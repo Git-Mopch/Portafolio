@@ -70,7 +70,10 @@
   float: left;
   height: 100%;
 }
-.mainSpaceImg img {
+.espacioImg {
+  background-image: url("../../assets/Img/ImgMiguel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 400px;
   border-radius: 30px;
   height: 400px;
