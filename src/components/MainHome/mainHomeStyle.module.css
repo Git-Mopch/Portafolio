@@ -20,13 +20,13 @@
   display: flex;
 }
 .section1Space p {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   width: 50px;
   text-align: center;
   padding: 10px;
   border-radius: 20px;
   height: 20px;
-  background-color: #ffffff;
+  background: linear-gradient(135deg, #1a3d2f, #2e6b4f);
 }
 .section2Space {
   color: #ffffff;
